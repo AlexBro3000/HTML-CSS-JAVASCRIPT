@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Корабли - Eve Online</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="ship">
+    <div class="block_menu">
+      <ul>
+        <li><a href="">Главная страница</a></li>
+        <li><a href="">Статистика</a></li>
+        <li><a href="">Корабль<span id="href_ship"></span></a></li>
+      </ul>
+    </div>
+    <div class="block_ship_tree">
+      <fieldset>
+        <legend>
+          <h3>Дерево кораблей</h3>
+        </legend>
+        <details open="open">
+          <summary><abbr title="Корветы — примитивные суда, оснащённые базовыми орудиями, буровыми модулями и двигательными установками. Они предоставляются бесплатно на любой станции по запросу «Подняться на борт корвета». Эти корабли снабжают капсулёров основными инструментами исследования Нового Эдема и служат своего рода ступенькой для перехода к другим специализациям.">Корвет</abbr></summary>
+          <details>
+            <summary class="Amarr">Amarr</summary>
+            <p>Impairor</p>
+          </details>
+          <details>
+            <summary class="Gallente">Gallente</summary>
+            <p id="Velator">Velator</p>
+          </details>
+          <details>
+            <summary class="Caldari">Caldari</summary>
+            <p id="Ibis">Ibis</p>
+          </details>
+          <details>
+            <summary class="Minmatar">Minmatar</summary>
+            <p id="Reaper">Reaper</p>
+          </details>
+        </details>
+        <details open="open">
+          <summary><abbr title="Фрегаты — доступные, но весьма эффективные боевые суда. Они отлично показывают себя в небольших схватках и обеспечивают существенную поддержку флоту в крупных сражениях, быстро обездвиживая приоритетные цели.">Фрегат</abbr></summary>
+          <details>
+            <summary class="Amarr">Amarr</summary>
+            <p id="Magnate">Magnate</p>
+            <p id="Tormentor">Tormentor</p>
+            <p id="Punisher">Punisher</p>
+            <p id="Crucifier">Crucifier</p>
+            <p id="Executioner">Executioner</p>
+            <p id="Inquisitor">Inquisitor</p>
+          </details>
+          <details>
+            <summary class="Gallente">Gallente</summary>
+            <p id="Navitas">Navitas</p>
+            <p id="Tristan">Tristan</p>
+            <p id="Incursus">Incursus</p>
+            <p id="Imicus">Imicus</p>
+            <p id="Atron">Atron</p>
+            <p id="Maulus">Maulus</p>
+          </details>
+          <details>
+            <summary class="Caldari">Caldari</summary>
+            <p id="Bantam">Bantam</p>
+            <p id="Condor">Condor</p>
+            <p id="Griffin">Griffin</p>
+            <p id="Kestrel">Kestrel</p>
+            <p id="Merlin">Merlin</p>
+            <p id="Heron">Heron</p>
+          </details>
+          <details>
+            <summary class="Minmatar">Minmatar</summary>
+            <p id="Slasher">Slasher</p>
+            <p id="Probe">Probe</p>
+            <p id="Rifter">Rifter</p>
+            <p id="Breacher">Breacher</p>
+            <p id="Burst">Burst</p>
+            <p id="Vigil">Vigil</p>
+          </details>
+        </details>
+        <details open="open">
+          <summary><abbr title="Эсминцы идеальны для борьбы с фрегатами: большое количество разъёмов для орудий в сочетании с повышенной скоростью наведения и дальностью действия орудийных систем позволяют легко расстреливать эти юркие, но хрупкие суда. Однако из-за невысокого урона эсминцы не могут противостоять более крупным противникам.">Эсминец</abbr></summary>
+          <details>
+            <summary class="Amarr">Amarr</summary>
+            <p id="Coercer">Coercer</p>
+            <p id="Dragoon">Dragoon</p>
+          </details>
+          <details>
+            <summary class="Gallente">Gallente</summary>
+            <p id="Algos">Algos</p>
+            <p id="Catalyst">Catalyst</p>
+          </details>
+          <details>
+            <summary class="Caldari">Caldari</summary>
+            <p id="Corax">Corax</p>
+            <p id="Cormorant">Cormorant</p>
+          </details>
+          <details>
+            <summary class="Minmatar">Minmatar</summary>
+            <p id="Talwar">Talwar</p>
+            <p id="Thrasher">Thrasher</p>
+          </details>
+        </details>
+        <details open="open">
+          <summary><abbr title="Крейсеры — суда среднего размера, перенявшие всё самое лучшее у своих предшественников: фрегатов и эсминцев. Эти корабли сочетают в себе огневую мощь, скорость и сопротивляемость и потому прекрасно подходят практически для любых задач.">Крейсер</abbr></summary>
+          <details>
+            <summary class="Amarr">Amarr</summary>
+            <p id="Maller">Maller</p>
+            <p id="Augoror">Augoror</p>
+            <p id="Omen">Omen</p>
+            <p id="Arbitrator">Arbitrator</p>
+          </details>
+          <details>
+            <summary class="Gallente">Gallente</summary>
+            <p id="Thorax">Thorax</p>
+            <p id="Vexor">Vexor</p>
+            <p id="Celestis">Celestis</p>
+            <p id="Exequror">Exequror</p>
+          </details>
+          <details>
+            <summary class="Caldari">Caldari</summary>
+            <p id="Moa">Moa</p>
+            <p id="Osprey">Osprey</p>
+            <p id="Caracal">Caracal</p>
+            <p id="Blackbird">Blackbird</p>
+          </details>
+          <details>
+            <summary class="Minmatar">Minmatar</summary>
+            <p id="Rupture">Rupture</p>
+            <p id="Scythe">Scythe</p>
+            <p id="Stabber">Stabber</p>
+            <p id="Bellicose">Bellicose</p>
+          </details>
+        </details>
+        <details open="open">
+          <summary><abbr title="Линейные крейсеры отличаются от обычных лучшей защитой и большей мощностью: пилот, управляющий таким судном, может долго держать оборону. У линейных крейсеров больше разъёмов для орудий и модулей, поэтому их часто используют в качестве кораблей поддержки в боях между флотами.">Линейный крейсер</abbr></summary>
+          <details>
+            <summary class="Amarr">Amarr</summary>
+            <p id="Prophecy">Prophecy</p>
+            <p id="Harbinger">Harbinger</p>
+            <p id="Oracle">Oracle</p>
+          </details>
+          <details>
+            <summary class="Gallente">Gallente</summary>
+            <p id="Brutix">Brutix</p>
+            <p id="Myrmidon">Myrmidon</p>
+            <p id="Talos">Talos</p>
+          </details>
+          <details>
+            <summary class="Caldari">Caldari</summary>
+            <p id="Ferox">Ferox</p>
+            <p id="Drake">Drake</p>
+            <p id="Naga">Naga</p>
+          </details>
+          <details>
+            <summary class="Minmatar">Minmatar</summary>
+            <p id="Cyclone">Cyclone</p>
+            <p id="Hurricane">Hurricane</p>
+            <p id="Tornado">Tornado</p>
+          </details>
+        </details>
+        <details open="open">
+          <summary><abbr title="Линкоры — надёжные боевые суда с большим количеством разъёмов для орудий. Они обладают внушительной огневой мощью и стреляют на дальние расстояния. Эти корабли отлично подходят для выполнения заданий и сражений между флотами. Некоторым из них даже не нужны звёздные врата, чтобы перемещать союзников сквозь космическое пространство.">Линкор</abbr></summary>
+          <details>
+            <summary class="Amarr">Amarr</summary>
+            <p id="Abaddon">Abaddon</p>
+            <p id="Apocalypse">Apocalypse</p>
+            <p id="Armageddon">Armageddon</p>
+          </details>
+          <details>
+            <summary class="Gallente">Gallente</summary>
+            <p id="Hyperion">Hyperion</p>
+            <p id="Megathron">Megathron</p>
+            <p id="Dominix">Dominix</p>
+          </details>
+          <details>
+            <summary class="Caldari">Caldari</summary>
+            <p id="Rokh">Rokh</p>
+            <p id="Raven">Raven</p>
+            <p id="Scorpion">Scorpion</p>
+          </details>
+          <details>
+            <summary class="Minmatar">Minmatar</summary>
+            <p id="Maelstrom">Maelstrom</p>
+            <p id="Tempest">Tempest</p>
+            <p id="Typhoon">Typhoon</p>
+          </details>
+        </details>
+      </fieldset>
+    </div>
+    <div class="block_data_img">
+      <div class="img">
+        <div id="img"></div>
+      </div>
+      <div class="text">
+        <h2>
+          <div id="nameShip"></div>
+        </h2>
+        <table border="0">
+          <tr>
+            <td class="field"> 
+              <h4>Тип корабля:</h4>
+            </td>
+            <td>
+              <p id="typeShip"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="field"> 
+              <h4>Государство:</h4>
+            </td>
+            <td>
+              <p id="state"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="field"> 
+              <h4>Цена:</h4>
+            </td>
+            <td>
+              <p><span id="price"></span><span> ISK</span></p>
+            </td>
+          </tr>
+          <tr class="size">
+            <td class="field"> 
+              <h4>Описание:</h4>
+            </td>
+            <td>
+              <p id="description"></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="block_data_text">
+      <div class="characteristic">
+        <fieldset class="global">
+          <legend>
+            <h4>Характеристики</h4>
+          </legend>
+          <fieldset class="line">
+            <legend>
+              <h4>Корпус</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Запас прочности корпуса:</td>
+                <td class="data"><span id="hullStrength"></span><span> ед.</span></td>
+              </tr>
+              <tr> </tr>
+              <td class="field">Вместимость грузового отсека:
+                <td class="data"><span id="cargo"></span><span> м^3</span></td>
+              </td>
+              <tr> 
+                <td class="field">Объем отсека для дронов:</td>
+                <td class="data"><span id="droneCompartment"></span><span> м^3</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Пропускная способность канала телеуправления:</td>
+                <td class="data"><span id="telecontrolChannel"></span><span> Мбит/с</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Отсек спасательного фрегата:</td>
+                <td class="data"><span id="frigate"></span><span> ед.</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Масса:</td>
+                <td class="data"><span id="weight"></span><span> кг</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Занимает объем:</td>
+                <td class="data"><span id="volume"></span><span> м^3</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Занимает объем (в разобранном виде):</td>
+                <td class="data"><span id="volumeDisassembled"></span><span> м^3</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Влияние инертности конструкции:</td>
+                <td class="data"><span id="inertia"></span><span>x</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление ЭМ-урону:</td>
+                <td class="data"><span id="resistHullEM"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление термальному урону:</td>
+                <td class="data"><span id="resistHullThermal"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление кинетическому урону:</td>
+                <td class="data"><span id="resistHullKinetic"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление фугасному урону:</td>
+                <td class="data"><span id="resistHullExplosive"></span><span> %</span></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset class="line">
+            <legend>
+              <h4>Броня</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Запас прочности брони:</td>
+                <td class="data"><span id="armorStrength"></span><span> ед.</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление ЭМ-урону:</td>
+                <td class="data"><span id="resistArmorEM"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление термальному урону:</td>
+                <td class="data"><span id="resistArmorThermal"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление кинетическому урону:</td>
+                <td class="data"><span id="resistArmorKinetic"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление фугасному урону:</td>
+                <td class="data"><span id="resistArmorExplosive"></span><span> %</span></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset class="line">
+            <legend>
+              <h4>Щит</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Запас прочности щита:</td>
+                <td class="data"><span id="shieldStrength"></span><span> ед.</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Время регенерации щитов:</td>
+                <td class="data"><span id="shieldRegen"></span><span> с.</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление ЭМ-урону:</td>
+                <td class="data"><span id="resistShieldEM"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление термальному урону:</td>
+                <td class="data"><span id="resistShieldThermal"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление кинетическому урону:</td>
+                <td class="data"><span id="resistShieldKinetic"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление фугасному урону:</td>
+                <td class="data"><span id="resistShieldExplosive"></span><span> %</span></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset class="line">
+            <legend>
+              <h4>Сопротивление средствам РЭП</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Сопротивление накопителя нейтрализатору:</td>
+                <td class="data"><span id="resistNeutraliz"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление генератору стазис-поля:</td>
+                <td class="data"><span id="resistStasis"></span><span> %</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Сопротивление воздействию помех на наводку:</td>
+                <td class="data"><span id="resistInterference"></span><span> %</span></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset class="line">
+            <legend>
+              <h4>Накопитель энергии</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Емкость накопителя:</td>
+                <td class="data"><span id="capacity"></span><span> ГДж</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Время востановления заряда:</td>
+                <td class="data"><span id="energyRegen"></span><span> с.</span></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset class="line">
+            <legend>
+              <h4>Целеуказания</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Максимальная дальность захвата цели:</td>
+                <td class="data"><span id="captureRange"></span><span> км</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Максимальное количество захваченных целей:</td>
+                <td class="data" id="amount"></td>
+              </tr>
+              <tr> 
+                <td class="field">Радиус сигнатуры:</td>
+                <td class="data"><span id="signature"></span><span> м</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Разрешающая способность систем захвата цели:</td>
+                <td class="data"><span id="resolution"></span><span> мм</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Эффективность радарной системы:</td>
+                <td class="data"><span id="efficRadar"></span><span> ед.</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Эффективность магнитнометрической системы:</td>
+                <td class="data"><span id="efficMagnetometric"></span><span> ед.</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Эффективность гравиметрической системы:</td>
+                <td class="data"><span id="efficGravimetric"></span><span> ед.</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Эффективность ладарной системы:</td>
+                <td class="data"><span id="efficLadar"></span><span> ед.</span></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset class="line">
+            <legend>
+              <h4>Двигательная установка</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Максимальная скорость:</td>
+                <td class="data"><span id="speed"></span><span> м/с</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Скорость в варп-режиме:</td>
+                <td class="data"><span id="warp_mode"></span><span> а.е./с.</span></td>
+              </tr>
+            </table>
+          </fieldset>
+        </fieldset>
+      </div>
+      <div class="equipment">
+        <fieldset class="global">
+          <legend>
+            <h4>Служебное оснащение</h4>
+          </legend>
+          <fieldset class="line">
+            <legend>
+              <h4>Системы</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Мощность ЦПУ:</td>
+                <td class="data"><span id="CPU"></span><span> Тф</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Мощность реактора:</td>
+                <td class="data"><span id="reactor"></span><span> МВт</span></td>
+              </tr>
+              <tr> 
+                <td class="field">Калибровка:</td>
+                <td class="data"><span id="calibration"></span><span> ед.</span></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset class="line">
+            <legend>
+              <h4>Точки монтажа</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Орудийные установки:</td>
+                <td class="data" id="pointsGun"></td>
+              </tr>
+              <tr> 
+                <td class="field">Пусковые установки:</td>
+                <td class="data" id="pointsLauncher"></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset class="line">
+            <legend>
+              <h4>Точки монтажа</h4>
+            </legend>
+            <table border="0">
+              <tr> 
+                <td class="field">Разъемы большой мощности:</td>
+                <td class="data" id="connectHPower"></td>
+              </tr>
+              <tr> 
+                <td class="field">Разъемы средней мощности:</td>
+                <td class="data" id="connectMPower"></td>
+              </tr>
+              <tr> 
+                <td class="field">Разъемы малой мощности:</td>
+                <td class="data" id="connectLPower"></td>
+              </tr>
+              <tr> 
+                <td class="field">Разъемы тюнинг-модулей:</td>
+                <td class="data" id="connectTuning"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </fieldset>
+      </div>
+    </div>
+    <div class="script">
+      <script type="module">
+        let params = (new URL(document.location)).searchParams;
+        
+        let {display} = await import("./js/" + params.get("type") + "/" + params.get("name") + ".js");
+        display();
+        document.getElementById("href_ship").innerHTML = ": " + params.get("name");
+        
+      </script>
+      <script type="module">
+        const Impairor = document.getElementById("Impairor");
+        import {display as display_Impairor} from "./js/Corvette/Impairor.js";
+        Impairor.onclick = function() { 
+            display_Impairor();
+        }
+        const Velator = document.getElementById("Velator");
+        import {display as display_Velator} from "./js/Corvette/Velator.js";
+        Velator.onclick = function() { 
+            display_Velator();
+        }
+        const Ibis = document.getElementById("Ibis");
+        import {display as display_Ibis} from "./js/Corvette/Ibis.js";
+        Ibis.onclick = function() { 
+            display_Ibis();
+        }
+        const Reaper = document.getElementById("Reaper");
+        import {display as display_Reaper} from "./js/Corvette/Reaper.js";
+        Reaper.onclick = function() { 
+            display_Reaper();
+        }
+        
+      </script>
+      <script type="module">
+        const Magnate = document.getElementById("Magnate");
+        import {display as display_Magnate} from "./js/Frigate/Magnate.js";
+        Magnate.onclick = function() { 
+            display_Magnate();
+        }
+        const Tormentor = document.getElementById("Tormentor");
+        import {display as display_Tormentor} from "./js/Frigate/Tormentor.js";
+        Tormentor.onclick = function() { 
+            display_Tormentor();
+        }
+        const Punisher = document.getElementById("Punisher");
+        import {display as display_Punisher} from "./js/Frigate/Punisher.js";
+        Punisher.onclick = function() { 
+            display_Punisher();
+        }
+        const Crucifier = document.getElementById("Crucifier");
+        import {display as display_Crucifier} from "./js/Frigate/Crucifier.js";
+        Crucifier.onclick = function() { 
+            display_Crucifier();
+        }
+        const Executioner = document.getElementById("Executioner");
+        import {display as display_Executioner} from "./js/Frigate/Executioner.js";
+        Executioner.onclick = function() { 
+            display_Executioner();
+        }
+        const Inquisitor = document.getElementById("Inquisitor");
+        import {display as display_Inquisitor} from "./js/Frigate/Inquisitor.js";
+        Inquisitor.onclick = function() { 
+            display_Inquisitor();
+        }
+        const Navitas = document.getElementById("Navitas");
+        import {display as display_Navitas} from "./js/Frigate/Navitas.js";
+        Navitas.onclick = function() { 
+            display_Navitas();
+        }
+        const Tristan = document.getElementById("Tristan");
+        import {display as display_Tristan} from "./js/Frigate/Tristan.js";
+        Tristan.onclick = function() { 
+            display_Tristan();
+        }
+        const Incursus = document.getElementById("Incursus");
+        import {display as display_Incursus} from "./js/Frigate/Incursus.js";
+        Incursus.onclick = function() { 
+            display_Incursus();
+        }
+        const Imicus = document.getElementById("Imicus");
+        import {display as display_Imicus} from "./js/Frigate/Imicus.js";
+        Imicus.onclick = function() { 
+            display_Imicus();
+        }
+        const Atron = document.getElementById("Atron");
+        import {display as display_Atron} from "./js/Frigate/Atron.js";
+        Atron.onclick = function() { 
+            display_Atron();
+        }
+        const Maulus = document.getElementById("Maulus");
+        import {display as display_Maulus} from "./js/Frigate/Maulus.js";
+        Maulus.onclick = function() { 
+            display_Maulus();
+        }
+        const Bantam = document.getElementById("Bantam");
+        import {display as display_Bantam} from "./js/Frigate/Bantam.js";
+        Bantam.onclick = function() { 
+            display_Bantam();
+        }
+        const Condor = document.getElementById("Condor");
+        import {display as display_Condor} from "./js/Frigate/Condor.js";
+        Condor.onclick = function() { 
+            display_Condor();
+        }
+        const Griffin = document.getElementById("Griffin");
+        import {display as display_Griffin} from "./js/Frigate/Griffin.js";
+        Griffin.onclick = function() { 
+            display_Griffin();
+        }
+        const Kestrel = document.getElementById("Kestrel");
+        import {display as display_Kestrel} from "./js/Frigate/Kestrel.js";
+        Kestrel.onclick = function() { 
+            display_Kestrel();
+        }
+        const Merlin = document.getElementById("Merlin");
+        import {display as display_Merlin} from "./js/Frigate/Merlin.js";
+        Merlin.onclick = function() { 
+            display_Merlin();
+        }
+        const Heron = document.getElementById("Heron");
+        import {display as display_Heron} from "./js/Frigate/Heron.js";
+        Heron.onclick = function() { 
+            display_Heron();
+        }
+        const Slasher = document.getElementById("Slasher");
+        import {display as display_Slasher} from "./js/Frigate/Slasher.js";
+        Slasher.onclick = function() { 
+            display_Slasher();
+        }
+        const Probe = document.getElementById("Probe");
+        import {display as display_Probe} from "./js/Frigate/Probe.js";
+        Probe.onclick = function() { 
+            display_Probe();
+        }
+        const Rifter = document.getElementById("Rifter");
+        import {display as display_Rifter} from "./js/Frigate/Rifter.js";
+        Rifter.onclick = function() { 
+            display_Rifter();
+        }
+        const Breacher = document.getElementById("Breacher");
+        import {display as display_Breacher} from "./js/Frigate/Breacher.js";
+        Breacher.onclick = function() { 
+            display_Breacher();
+        }
+        const Burst = document.getElementById("Burst");
+        import {display as display_Burst} from "./js/Frigate/Burst.js";
+        Burst.onclick = function() { 
+            display_Burst();
+        }
+        const Vigil = document.getElementById("Vigil");
+        import {display as display_Vigil} from "./js/Frigate/Vigil.js";
+        Vigil.onclick = function() { 
+            display_Vigil();
+        }
+        
+      </script>
+      <script type="module">
+        const Coercer = document.getElementById("Coercer");
+        import {display as display_Coercer} from "./js/Destroyer/Coercer.js";
+        Coercer.onclick = function() { 
+            display_Coercer();
+        }
+        const Dragoon = document.getElementById("Dragoon");
+        import {display as display_Dragoon} from "./js/Destroyer/Dragoon.js";
+        Dragoon.onclick = function() { 
+            display_Dragoon();
+        }
+        const Algos = document.getElementById("Algos");
+        import {display as display_Algos} from "./js/Destroyer/Algos.js";
+        Algos.onclick = function() { 
+            display_Algos();
+        }
+        const Catalyst = document.getElementById("Catalyst");
+        import {display as display_Catalyst} from "./js/Destroyer/Catalyst.js";
+        Catalyst.onclick = function() { 
+            display_Catalyst();
+        }
+        const Corax = document.getElementById("Corax");
+        import {display as display_Corax} from "./js/Destroyer/Corax.js";
+        Corax.onclick = function() { 
+            display_Corax();
+        }
+        const Cormorant = document.getElementById("Cormorant");
+        import {display as display_Cormorant} from "./js/Destroyer/Cormorant.js";
+        Cormorant.onclick = function() { 
+            display_Cormorant();
+        }
+        const Talwar = document.getElementById("Talwar");
+        import {display as display_Talwar} from "./js/Destroyer/Talwar.js";
+        Talwar.onclick = function() { 
+            display_Talwar();
+        }
+        const Thrasher = document.getElementById("Thrasher");
+        import {display as display_Thrasher} from "./js/Destroyer/Thrasher.js";
+        Thrasher.onclick = function() { 
+            display_Thrasher();
+        }
+        
+      </script>
+      <script type="module">
+        const Maller = document.getElementById("Maller");
+        import {display as display_Maller} from "./js/Cruser/Maller.js";
+        Maller.onclick = function() { 
+            display_Maller();
+        }
+        const Augoror = document.getElementById("Augoror");
+        import {display as display_Augoror} from "./js/Cruser/Augoror.js";
+        Augoror.onclick = function() { 
+            display_Augoror();
+        }
+        const Omen = document.getElementById("Omen");
+        import {display as display_Omen} from "./js/Cruser/Omen.js";
+        Omen.onclick = function() { 
+            display_Omen();
+        }
+        const Arbitrator = document.getElementById("Arbitrator");
+        import {display as display_Arbitrator} from "./js/Cruser/Arbitrator.js";
+        Arbitrator.onclick = function() { 
+            display_Arbitrator();
+        }
+        const Thorax = document.getElementById("Thorax");
+        import {display as display_Thorax} from "./js/Cruser/Thorax.js";
+        Thorax.onclick = function() { 
+            display_Thorax();
+        }
+        const Vexor = document.getElementById("Vexor");
+        import {display as display_Vexor} from "./js/Cruser/Vexor.js";
+        Vexor.onclick = function() { 
+            display_Vexor();
+        }
+        const Celestis = document.getElementById("Celestis");
+        import {display as display_Celestis} from "./js/Cruser/Celestis.js";
+        Celestis.onclick = function() { 
+            display_Celestis();
+        }
+        const Exequror = document.getElementById("Exequror");
+        import {display as display_Exequror} from "./js/Cruser/Exequror.js";
+        Exequror.onclick = function() { 
+            display_Exequror();
+        }
+        const Moa = document.getElementById("Moa");
+        import {display as display_Moa} from "./js/Cruser/Moa.js";
+        Moa.onclick = function() { 
+            display_Moa();
+        }
+        const Osprey = document.getElementById("Osprey");
+        import {display as display_Osprey} from "./js/Cruser/Osprey.js";
+        Osprey.onclick = function() { 
+            display_Osprey();
+        }
+        const Caracal = document.getElementById("Caracal");
+        import {display as display_Caracal} from "./js/Cruser/Caracal.js";
+        Caracal.onclick = function() { 
+            display_Caracal();
+        }
+        const Blackbird = document.getElementById("Blackbird");
+        import {display as display_Blackbird} from "./js/Cruser/Blackbird.js";
+        Blackbird.onclick = function() { 
+            display_Blackbird();
+        }
+        const Rupture = document.getElementById("Rupture");
+        import {display as display_Rupture} from "./js/Cruser/Rupture.js";
+        Rupture.onclick = function() { 
+            display_Rupture();
+        }
+        const Scythe = document.getElementById("Scythe");
+        import {display as display_Scythe} from "./js/Cruser/Scythe.js";
+        Scythe.onclick = function() { 
+            display_Scythe();
+        }
+        const Stabber = document.getElementById("Stabber");
+        import {display as display_Stabber} from "./js/Cruser/Stabber.js";
+        Stabber.onclick = function() { 
+            display_Stabber();
+        }
+        const Bellicose = document.getElementById("Bellicose");
+        import {display as display_Bellicose} from "./js/Cruser/Bellicose.js";
+        Bellicose.onclick = function() { 
+            display_Bellicose();
+        }
+        
+      </script>
+      <script type="module">
+        const Prophecy = document.getElementById("Prophecy");
+        import {display as display_Prophecy} from "./js/Battle_cruiser/Prophecy.js";
+        Prophecy.onclick = function() { 
+            display_Prophecy();
+        }
+        const Harbinger = document.getElementById("Harbinger");
+        import {display as display_Harbinger} from "./js/Battle_cruiser/Harbinger.js";
+        Harbinger.onclick = function() { 
+            display_Harbinger();
+        }
+        const Oracle = document.getElementById("Oracle");
+        import {display as display_Oracle} from "./js/Battle_cruiser/Oracle.js";
+        Oracle.onclick = function() { 
+            display_Oracle();
+        }
+        const Brutix = document.getElementById("Brutix");
+        import {display as display_Brutix} from "./js/Battle_cruiser/Brutix.js";
+        Brutix.onclick = function() { 
+            display_Brutix();
+        }
+        const Myrmidon = document.getElementById("Myrmidon");
+        import {display as display_Myrmidon} from "./js/Battle_cruiser/Myrmidon.js";
+        Myrmidon.onclick = function() { 
+            display_Myrmidon();
+        }
+        const Talos = document.getElementById("Talos");
+        import {display as display_Talos} from "./js/Battle_cruiser/Talos.js";
+        Talos.onclick = function() { 
+            display_Talos();
+        }
+        const Ferox = document.getElementById("Ferox");
+        import {display as display_Ferox} from "./js/Battle_cruiser/Ferox.js";
+        Ferox.onclick = function() { 
+            display_Ferox();
+        }
+        const Drake = document.getElementById("Drake");
+        import {display as display_Drake} from "./js/Battle_cruiser/Drake.js";
+        Drake.onclick = function() { 
+            display_Drake();
+        }
+        const Naga = document.getElementById("Naga");
+        import {display as display_Naga} from "./js/Battle_cruiser/Naga.js";
+        Naga.onclick = function() { 
+            display_Naga();
+        }
+        const Cyclone = document.getElementById("Cyclone");
+        import {display as display_Cyclone} from "./js/Battle_cruiser/Cyclone.js";
+        Cyclone.onclick = function() { 
+            display_Cyclone();
+        }
+        const Hurricane = document.getElementById("Hurricane");
+        import {display as display_Hurricane} from "./js/Battle_cruiser/Hurricane.js";
+        Hurricane.onclick = function() { 
+            display_Hurricane();
+        }
+        const Tornado = document.getElementById("Tornado");
+        import {display as display_Tornado} from "./js/Battle_cruiser/Tornado.js";
+        Tornado.onclick = function() { 
+            display_Tornado();
+        }
+        
+      </script>
+      <script type="module">
+        const Abaddon = document.getElementById("Abaddon");
+        import {display as display_Abaddon} from "./js/Battleship/Abaddon.js";
+        Abaddon.onclick = function() { 
+            display_Abaddon();
+        }
+        const Apocalypse = document.getElementById("Apocalypse");
+        import {display as display_Apocalypse} from "./js/Battleship/Apocalypse.js";
+        Apocalypse.onclick = function() { 
+            display_Apocalypse();
+        }
+        const Armageddon = document.getElementById("Armageddon");
+        import {display as display_Armageddon} from "./js/Battleship/Armageddon.js";
+        Armageddon.onclick = function() { 
+            display_Armageddon();
+        }
+        const Hyperion = document.getElementById("Hyperion");
+        import {display as display_Hyperion} from "./js/Battleship/Hyperion.js";
+        Hyperion.onclick = function() { 
+            display_Hyperion();
+        }
+        const Megathron = document.getElementById("Megathron");
+        import {display as display_Megathron} from "./js/Battleship/Megathron.js";
+        Megathron.onclick = function() { 
+            display_Megathron();
+        }
+        const Dominix = document.getElementById("Dominix");
+        import {display as display_Dominix} from "./js/Battleship/Dominix.js";
+        Dominix.onclick = function() { 
+            display_Dominix();
+        }
+        const Rokh = document.getElementById("Rokh");
+        import {display as display_Rokh} from "./js/Battleship/Rokh.js";
+        Rokh.onclick = function() { 
+            display_Rokh();
+        }
+        const Raven = document.getElementById("Raven");
+        import {display as display_Raven} from "./js/Battleship/Raven.js";
+        Raven.onclick = function() { 
+            display_Raven();
+        }
+        const Scorpion = document.getElementById("Scorpion");
+        import {display as display_Scorpion} from "./js/Battleship/Scorpion.js";
+        Scorpion.onclick = function() { 
+            display_Scorpion();
+        }
+        const Maelstrom = document.getElementById("Maelstrom");
+        import {display as display_Maelstrom} from "./js/Battleship/Maelstrom.js";
+        Maelstrom.onclick = function() { 
+            display_Maelstrom();
+        }
+        const Tempest = document.getElementById("Tempest");
+        import {display as display_Tempest} from "./js/Battleship/Tempest.js";
+        Tempest.onclick = function() { 
+            display_Tempest();
+        }
+        const Typhoon = document.getElementById("Typhoon");
+        import {display as display_Typhoon} from "./js/Battleship/Typhoon.js";
+        Typhoon.onclick = function() { 
+            display_Typhoon();
+        }
+      </script>
+    </div>
+  </body>
+</html>
