@@ -1,0 +1,1009 @@
+html {
+  font: 14px arial;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body {
+  display: grid;
+  grid-template-rows: -webkit-max-content -webkit-max-content;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: 25% 75%;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  background: #1b5a7e;
+}
+p {
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.block_menu {
+  grid-area: 1/1/2/3;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 0 5px 0;
+  background: #123c54;
+}
+div.block_menu a {
+  margin: 20px 0 0 0;
+  padding: 15px 8px;
+  font-weight: bold;
+  font-size: calc(1em + 2px);
+  text-decoration: none;
+  color: #fff;
+}
+div.block_menu a:hover {
+  border-radius: 5px;
+  background: rgba(0,0,0,0.2);
+}
+div.block_menu a.active {
+  margin: 0 0 0 0;
+  padding: 35px 15px 15px 15px;
+  background: rgba(0,0,0,0.3);
+}
+div.block_tree {
+  grid-area: 2/1/5/2;
+  margin: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #123c54;
+}
+div.block_tree fieldset {
+  border-radius: 5px;
+  border: groove #e6e6e6;
+}
+div.block_tree fieldset h3 {
+  font-size: 1em;
+  color: #e6e6e6;
+}
+div.block_tree fieldset details {
+  color: #e6e6e6;
+}
+div.block_tree fieldset .Corvette > summary,
+div.block_tree fieldset .Frigate > summary,
+div.block_tree fieldset .Destroyer > summary,
+div.block_tree fieldset .Cruser > summary,
+div.block_tree fieldset .Battle_cruiser > summary,
+div.block_tree fieldset .Battleship > summary {
+  font-weight: bold;
+  line-height: 1.5em;
+  list-style: none;
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  background: rgba(0,0,0,0.2);
+}
+div.block_tree fieldset .Corvette abbr,
+div.block_tree fieldset .Frigate abbr,
+div.block_tree fieldset .Destroyer abbr,
+div.block_tree fieldset .Cruser abbr,
+div.block_tree fieldset .Battle_cruiser abbr,
+div.block_tree fieldset .Battleship abbr {
+  text-decoration: none;
+}
+div.block_tree fieldset .Amarr > summary {
+  font-weight: bold;
+  line-height: 1.5em;
+  list-style: none;
+  text-indent: 10px;
+  color: #ccb400;
+  border-bottom: 1px solid #999;
+  background: rgba(0,0,0,0.1);
+}
+div.block_tree fieldset .Gallente > summary {
+  font-weight: bold;
+  line-height: 1.5em;
+  list-style: none;
+  text-indent: 10px;
+  color: #009973;
+  border-bottom: 1px solid #999;
+  background: rgba(0,0,0,0.1);
+}
+div.block_tree fieldset .Caldari > summary {
+  font-weight: bold;
+  line-height: 1.5em;
+  list-style: none;
+  text-indent: 10px;
+  color: #008fb3;
+  border-bottom: 1px solid #999;
+  background: rgba(0,0,0,0.1);
+}
+div.block_tree fieldset .Minmatar > summary {
+  font-weight: bold;
+  line-height: 1.5em;
+  list-style: none;
+  text-indent: 10px;
+  color: #b32400;
+  border-bottom: 1px solid #999;
+  background: rgba(0,0,0,0.1);
+}
+div.block_tree fieldset p {
+  line-height: 2;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: rgba(0,0,0,0.08);
+}
+div.block_tree fieldset p input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+div.block_tree fieldset p input + span {
+  display: inline-flex;
+  margin-left: 10px;
+  vertical-align: -2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+div.block_tree fieldset p input + span::before {
+  content: '';
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 0.5em;
+  border-radius: 0.25em;
+  border: 1px solid #9ca6b0;
+}
+div.block_tree fieldset p input:not(:checked)+span:hover::before {
+  border-color: #b3d7ff;
+}
+div.block_tree fieldset p input:active + span::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+div.block_tree fieldset p input:focus+span::before {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+div.block_tree fieldset p input:focus:not(:checked)+span::before {
+  border-color: #80bdff;
+}
+div.block_tree fieldset p input:checked+span::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+}
+div.block_tree fieldset p a {
+  font-style: italic;
+  text-decoration: none;
+  color: #ccc;
+}
+div.block_tree fieldset p a:hover {
+  font-weight: bold;
+  color: #f2f2f2;
+}
+div.block_tree fieldset p a.action {
+  font-weight: bold;
+  color: #f2f2f2;
+}
+div.block_data {
+  grid-area: 2/2/5/3;
+  margin: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #123c54;
+}
+div.block_data div.main_block_img {
+  display: flex;
+  margin: 20px 5px;
+  text-align: center;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.main_block_img div {
+  width: 25%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.main_block_img div img {
+  width: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+div.block_data div.main_block_ship_imp {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.main_block_ship_imp div.img {
+  width: 30%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.main_block_ship_imp div.img img {
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+div.block_data div.main_block_ship_imp div.text {
+  width: 70%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.main_block_ship_imp div.text h2 {
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  font-style: italic;
+  color: #e6e6e6;
+}
+div.block_data div.main_block_ship_imp div.text tr {
+  vertical-align: top;
+}
+div.block_data div.main_block_ship_imp div.text tr h4 {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #d9d9d9;
+}
+div.block_data div.main_block_ship_imp div.text tr p {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #bfbfbf;
+}
+div.block_data div.main_block_ship_imp div.text tr p.color_Amarr {
+  color: #ccb400;
+}
+div.block_data div.main_block_ship_imp div.text tr p.color_Gallente {
+  color: #009973;
+}
+div.block_data div.main_block_ship_imp div.text tr p.color_Caldari {
+  color: #008fb3;
+}
+div.block_data div.main_block_ship_imp div.text tr p.color_Minmatar {
+  color: #b32400;
+}
+div.block_data div.main_block_ship_imp div.text .color {
+  color: #ccb400;
+}
+div.block_data div.main_block_ship_vel {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.main_block_ship_vel div.img {
+  width: 30%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.main_block_ship_vel div.img img {
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+div.block_data div.main_block_ship_vel div.text {
+  width: 70%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.main_block_ship_vel div.text h2 {
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  font-style: italic;
+  color: #e6e6e6;
+}
+div.block_data div.main_block_ship_vel div.text tr {
+  vertical-align: top;
+}
+div.block_data div.main_block_ship_vel div.text tr h4 {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #d9d9d9;
+}
+div.block_data div.main_block_ship_vel div.text tr p {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #bfbfbf;
+}
+div.block_data div.main_block_ship_vel div.text tr p.color_Amarr {
+  color: #ccb400;
+}
+div.block_data div.main_block_ship_vel div.text tr p.color_Gallente {
+  color: #009973;
+}
+div.block_data div.main_block_ship_vel div.text tr p.color_Caldari {
+  color: #008fb3;
+}
+div.block_data div.main_block_ship_vel div.text tr p.color_Minmatar {
+  color: #b32400;
+}
+div.block_data div.main_block_ship_vel div.text .color {
+  color: #009973;
+}
+div.block_data div.main_block_ship_ibi {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.main_block_ship_ibi div.img {
+  width: 30%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.main_block_ship_ibi div.img img {
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+div.block_data div.main_block_ship_ibi div.text {
+  width: 70%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.main_block_ship_ibi div.text h2 {
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  font-style: italic;
+  color: #e6e6e6;
+}
+div.block_data div.main_block_ship_ibi div.text tr {
+  vertical-align: top;
+}
+div.block_data div.main_block_ship_ibi div.text tr h4 {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #d9d9d9;
+}
+div.block_data div.main_block_ship_ibi div.text tr p {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #bfbfbf;
+}
+div.block_data div.main_block_ship_ibi div.text tr p.color_Amarr {
+  color: #ccb400;
+}
+div.block_data div.main_block_ship_ibi div.text tr p.color_Gallente {
+  color: #009973;
+}
+div.block_data div.main_block_ship_ibi div.text tr p.color_Caldari {
+  color: #008fb3;
+}
+div.block_data div.main_block_ship_ibi div.text tr p.color_Minmatar {
+  color: #b32400;
+}
+div.block_data div.main_block_ship_ibi div.text .color {
+  color: #008fb3;
+}
+div.block_data div.main_block_ship_rea {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.main_block_ship_rea div.img {
+  width: 30%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.main_block_ship_rea div.img img {
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+div.block_data div.main_block_ship_rea div.text {
+  width: 70%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.main_block_ship_rea div.text h2 {
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  font-style: italic;
+  color: #e6e6e6;
+}
+div.block_data div.main_block_ship_rea div.text tr {
+  vertical-align: top;
+}
+div.block_data div.main_block_ship_rea div.text tr h4 {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #d9d9d9;
+}
+div.block_data div.main_block_ship_rea div.text tr p {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #bfbfbf;
+}
+div.block_data div.main_block_ship_rea div.text tr p.color_Amarr {
+  color: #ccb400;
+}
+div.block_data div.main_block_ship_rea div.text tr p.color_Gallente {
+  color: #009973;
+}
+div.block_data div.main_block_ship_rea div.text tr p.color_Caldari {
+  color: #008fb3;
+}
+div.block_data div.main_block_ship_rea div.text tr p.color_Minmatar {
+  color: #b32400;
+}
+div.block_data div.main_block_ship_rea div.text .color {
+  color: #b32400;
+}
+div.block_data div.ship_block_img {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.ship_block_img div.img {
+  width: 30%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.ship_block_img div.img img {
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+div.block_data div.ship_block_img div.text {
+  width: 70%;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+div.block_data div.ship_block_img div.text h2 {
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  font-style: italic;
+  color: #e6e6e6;
+}
+div.block_data div.ship_block_img div.text tr {
+  vertical-align: top;
+}
+div.block_data div.ship_block_img div.text tr h4 {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #d9d9d9;
+}
+div.block_data div.ship_block_img div.text tr p {
+  -webkit-margin-before: 0.4em;
+  margin-block-start: 0.4em;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  color: #bfbfbf;
+}
+div.block_data div.ship_block_img div.text tr p.color_Amarr {
+  color: #ccb400;
+}
+div.block_data div.ship_block_img div.text tr p.color_Gallente {
+  color: #009973;
+}
+div.block_data div.ship_block_img div.text tr p.color_Caldari {
+  color: #008fb3;
+}
+div.block_data div.ship_block_img div.text tr p.color_Minmatar {
+  color: #b32400;
+}
+div.block_data div.ship_block_img div.text .color {
+  color: ;
+}
+div.block_data div.ship_block_text {
+  display: flex;
+  margin: 5px;
+  padding: 5px 2.5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.ship_block_text div.characteristic {
+  width: 60%;
+}
+div.block_data div.ship_block_text div.equipment {
+  width: 40%;
+}
+div.block_data div.ship_block_text fieldset.global {
+  height: calc(100%);
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: groove #bfbfbf;
+}
+div.block_data div.ship_block_text fieldset.global > legend > h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #e6e6e6;
+}
+div.block_data div.ship_block_text fieldset.global fieldset {
+  border-radius: 5px;
+  border-color: #bfbfbf;
+}
+div.block_data div.ship_block_text fieldset.global fieldset > legend > h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #e6e6e6;
+}
+div.block_data div.ship_block_text fieldset.global fieldset > table {
+  width: 100%;
+}
+div.block_data div.ship_block_text fieldset.global fieldset > table td {
+  vertical-align: top;
+}
+div.block_data div.ship_block_text fieldset.global fieldset > table td.field {
+  width: 75%;
+  color: #d9d9d9;
+}
+div.block_data div.ship_block_text fieldset.global fieldset > table td.data {
+  width: 25%;
+  color: #bfbfbf;
+}
+div.block_data div.statis_block_setting {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.statis_block_setting > fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+div.block_data div.statis_block_setting > fieldset > legend > h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #e6e6e6;
+}
+div.block_data div.statis_block_setting > fieldset > div {
+  width: 50%;
+}
+div.block_data div.statis_block_setting > fieldset > div.display {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+  height: auto;
+}
+div.block_data div.statis_block_setting > fieldset > div.display > div {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: 50%;
+  margin-bottom: 8px;
+  color: #d9d9d9;
+}
+div.block_data div.statis_block_setting > fieldset > div.display > div.button {
+  width: 100%;
+  margin-bottom: 0;
+}
+div.block_data div.statis_block_setting > fieldset > div.display > div.button > input {
+  width: 100%;
+}
+div.block_data div.statis_block_setting > fieldset fieldset {
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  border-radius: 5px;
+  border-color: #bfbfbf;
+}
+div.block_data div.statis_block_setting > fieldset fieldset > legend > h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #e6e6e6;
+}
+div.block_data div.statis_block_setting > fieldset fieldset > table {
+  width: 100%;
+}
+div.block_data div.statis_block_setting > fieldset fieldset > table td {
+  vertical-align: top;
+}
+div.block_data div.statis_block_setting > fieldset fieldset > table td.field {
+  width: 95%;
+  color: #d9d9d9;
+}
+div.block_data div.statis_block_setting > fieldset fieldset > table td.data {
+  width: 5%;
+}
+div.block_data div.statis_block_setting > fieldset fieldset input.checkbox_visible {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+div.block_data div.statis_block_setting > fieldset fieldset input.checkbox_visible + span {
+  display: inline-flex;
+  margin-left: 10px;
+  vertical-align: -2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+div.block_data div.statis_block_setting > fieldset fieldset input.checkbox_visible + span::before {
+  content: '';
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 0.25em;
+  border: 1px solid #9ca6b0;
+}
+div.block_data div.statis_block_setting > fieldset fieldset input.checkbox_visible:not(:checked)+span:hover::before {
+  border-color: #b3d7ff;
+}
+div.block_data div.statis_block_setting > fieldset fieldset input.checkbox_visible:active + span::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+div.block_data div.statis_block_setting > fieldset fieldset input.checkbox_visible:focus+span::before {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+div.block_data div.statis_block_setting > fieldset fieldset input.checkbox_visible:focus:not(:checked)+span::before {
+  border-color: #80bdff;
+}
+div.block_data div.statis_block_setting > fieldset fieldset input.checkbox_visible:checked+span::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+}
+div.block_data div.statis_block_table {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.statis_block_table div.table_name {
+  width: 250px;
+}
+div.block_data div.statis_block_table div.table_name table {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+div.block_data div.statis_block_table div.table_value {
+  width: calc(100% - 250px);
+  overflow: auto;
+}
+div.block_data div.statis_block_table div.table_value table {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+div.block_data div.statis_block_table table {
+  border: 1px solid #ccc;
+  border-spacing: 1px;
+}
+div.block_data div.statis_block_table table tr {
+  height: 36px;
+}
+div.block_data div.statis_block_table table tr.size {
+  height: 16px;
+}
+div.block_data div.statis_block_table table tr th {
+  color: #d9d9d9;
+}
+div.block_data div.statis_block_table table tr td {
+  color: #a6a6a6;
+}
+div.block_data div.statis_block_graph {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.2);
+}
+div.block_data div.statis_block_graph > fieldset {
+  min-inline-size: calc(100% - 100px);
+  border-radius: 5px;
+}
+div.block_data div.statis_block_graph > fieldset > legend > h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #e6e6e6;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset {
+  display: flex;
+  padding: 5px;
+  box-sizing: border-box;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph {
+  display: flex;
+  width: 80%;
+  height: 250px;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_size {
+  width: 80px;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_size div.column {
+  height: 100%;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_size p {
+  height: 50%;
+  margin-right: 0.5em;
+  text-align: right;
+  color: #f2f2f2;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_size p.min {
+  display: grid;
+  align-items: end;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_columns {
+  display: flex;
+  width: calc(100% - 80px);
+  border: 1px solid #000;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_columns div.column {
+  position: relative;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: calc(100% / 76);
+  height: 100%;
+  box-sizing: border-box;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_columns div.column > div.progress {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_columns div.column > div.progress.a {
+  background: #cc0;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_columns div.column > div.progress.b {
+  background: #bb0;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_columns div.column > div.progress_data {
+  width: 20px;
+  height: 100%;
+  text-align: right;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: calc(1em + 2px);
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_columns div.column > div.progress_data > h4 {
+  position: relative;
+  -webkit-margin-before: 1px;
+  margin-block-start: 1px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: normal;
+  color: #f2f2f2;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.setting {
+  width: 20%;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.setting label {
+  color: #f2f2f2;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.setting select {
+  -webkit-margin-after: 0.8em;
+  margin-block-end: 0.8em;
+  width: 100%;
+}
+div.block_data div.statis_block_graph > fieldset div.fieldset div.setting input {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-columns: 100%;
+  }
+  div.block_menu {
+    grid-area: 1/1/2/2;
+    flex-direction: row;
+  }
+  div.block_tree {
+    grid-area: 2/1/3/2;
+  }
+  div.block_tree fieldset {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.block_tree fieldset .Corvette,
+  div.block_tree fieldset .Frigate,
+  div.block_tree fieldset .Destroyer,
+  div.block_tree fieldset .Cruser,
+  div.block_tree fieldset .Battle_cruiser,
+  div.block_tree fieldset .Battleship {
+    width: 33.33%;
+  }
+  div.block_data {
+    grid-area: 3/1/4/2;
+  }
+  div.block_data div.main_block_img {
+    flex-wrap: wrap;
+  }
+  div.block_data div.main_block_img div {
+    width: 50%;
+    padding: 0.5em;
+  }
+  div.block_data div.main_block_img div img {
+    border-radius: 10px;
+  }
+  div.block_data div.main_block_ship_imp {
+    flex-wrap: wrap;
+  }
+  div.block_data div.main_block_ship_imp div.img {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+  }
+  div.block_data div.main_block_ship_imp div.img img {
+    max-width: 256px;
+    border-radius: 12px;
+  }
+  div.block_data div.main_block_ship_imp div.text {
+    width: 100%;
+    padding: 0.5em;
+  }
+  div.block_data div.main_block_ship_vel {
+    flex-wrap: wrap;
+  }
+  div.block_data div.main_block_ship_vel div.img {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+  }
+  div.block_data div.main_block_ship_vel div.img img {
+    max-width: 256px;
+    border-radius: 12px;
+  }
+  div.block_data div.main_block_ship_vel div.text {
+    width: 100%;
+    padding: 0.5em;
+  }
+  div.block_data div.main_block_ship_ibi {
+    flex-wrap: wrap;
+  }
+  div.block_data div.main_block_ship_ibi div.img {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+  }
+  div.block_data div.main_block_ship_ibi div.img img {
+    max-width: 256px;
+    border-radius: 12px;
+  }
+  div.block_data div.main_block_ship_ibi div.text {
+    width: 100%;
+    padding: 0.5em;
+  }
+  div.block_data div.main_block_ship_rea {
+    flex-wrap: wrap;
+  }
+  div.block_data div.main_block_ship_rea div.img {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+  }
+  div.block_data div.main_block_ship_rea div.img img {
+    max-width: 256px;
+    border-radius: 12px;
+  }
+  div.block_data div.main_block_ship_rea div.text {
+    width: 100%;
+    padding: 0.5em;
+  }
+  div.block_data div.ship_block_img {
+    flex-wrap: wrap;
+  }
+  div.block_data div.ship_block_img div.img {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+  }
+  div.block_data div.ship_block_img div.img img {
+    max-width: 256px;
+    border-radius: 12px;
+  }
+  div.block_data div.ship_block_img div.text {
+    width: 100%;
+    padding: 0.5em;
+  }
+  div.block_data div.ship_block_text {
+    display: block;
+  }
+  div.block_data div.ship_block_text div.characteristic {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+  div.block_data div.ship_block_text div.equipment {
+    width: 100%;
+  }
+  div.block_data div.statis_block_setting > fieldset {
+    display: block;
+  }
+  div.block_data div.statis_block_setting > fieldset > div {
+    width: 100%;
+  }
+  div.block_data div.statis_block_setting > fieldset > div.display {
+    display: block;
+  }
+  div.block_data div.statis_block_setting > fieldset > div.display > div {
+    width: 100%;
+  }
+  div.block_data div.statis_block_table div.table_name {
+    width: 180px;
+  }
+  div.block_data div.statis_block_table div.table_value {
+    width: calc(100% - 180px);
+  }
+  div.block_data div.statis_block_graph > fieldset div.fieldset {
+    display: block;
+  }
+  div.block_data div.statis_block_graph > fieldset div.fieldset div.graph {
+    width: 100%;
+  }
+  div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_size {
+    width: 65px;
+  }
+  div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_columns {
+    width: calc(100% - 65px);
+  }
+  div.block_data div.statis_block_graph > fieldset div.fieldset div.graph div.block_graph_columns div.column > div.progress_data > h4 {
+    -webkit-margin-before: 2px;
+    margin-block-start: 2px;
+  }
+  div.block_data div.statis_block_graph > fieldset div.fieldset div.setting {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  div.block_data div.statis_block_graph > fieldset div.fieldset div.setting label {
+    width: 50%;
+    margin-top: 0.5em;
+  }
+  div.block_data div.statis_block_graph > fieldset div.fieldset div.setting select {
+    width: 80%;
+  }
+}
