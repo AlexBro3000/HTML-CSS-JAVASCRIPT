@@ -1,0 +1,37 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Tormentor'
+	- var typeShip = 'Фрегат'
+	- var price = 517000
+	// Описание
+	- var description = "Фрегаты типа «Торментор» в строю уже многие десятилетия. До последнего времени они использовались лишь в качестве буровых кораблей: их размер считался совершенно недостаточным для применения на поле боя. Вместе с тем, как и большинство кораблей Амаррской Империи, они всегда были крепким орешком благодаря эффективным защитным системам. Недавние усовершенствования, приведшие к снижению потребления энергии накопителя лазерными орудиями «торменторов», а также к увеличению наносимого ими ущерба, привели к тому, что отныне лазеры «торменторов» прожигают не безжизненную руду, а броню неудачливых врагов."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 400
+	- var cargo = 130
+	- var droneCompartment = 20
+	- var telecontrolChannel = 10
+	// Броня
+	- var armorStrength = 500
+	// Щит
+	- var shieldStrength = 350
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 425
+	- var energyRegen = 212.5
+	// Целеуказания
+	- var captureRange = 40
+	- var amount = 4
+	// Двигательная установка
+	- var speed = 335
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 130
+	- var reactor = 50
+	- var pointsGun = 3
+	- var pointsLauncher = 0
+	- var connectHPower = 3
+	- var connectMPower = 3
+	- var connectLPower = 4

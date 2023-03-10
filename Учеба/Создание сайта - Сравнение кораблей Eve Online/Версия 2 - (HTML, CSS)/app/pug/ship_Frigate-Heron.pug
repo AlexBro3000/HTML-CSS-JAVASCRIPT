@@ -1,0 +1,37 @@
+extends templates/template_ship-Caldari
+
+block variables
+	// Корабль
+	- var nameShip = 'Heron'
+	- var typeShip = 'Фрегат'
+	- var price = 634000
+	// Описание
+	- var description = "Благодаря относительно мощным бортовым электронно-вычислительным системам, применение «Герона» в целях ведения РЭБ не исключается. Однако его защита сравнительно слаба, а эффективность бортовых вооружений весьма ограничена, в связи с чем его чаще используют для разведки и исследования."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 200
+	- var cargo = 400
+	- var droneCompartment = 35
+	- var telecontrolChannel = 15
+	// Броня
+	- var armorStrength = 200
+	// Щит
+	- var shieldStrength = 400
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 245
+	- var energyRegen = 135
+	// Целеуказания
+	- var captureRange = 37.5
+	- var amount = 4
+	// Двигательная установка
+	- var speed = 340
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 260
+	- var reactor = 24
+	- var pointsGun = 2
+	- var pointsLauncher = 2
+	- var connectHPower = 3
+	- var connectMPower = 5
+	- var connectLPower = 2

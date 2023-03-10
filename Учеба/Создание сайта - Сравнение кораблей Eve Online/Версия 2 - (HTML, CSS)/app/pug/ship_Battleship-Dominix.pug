@@ -1,0 +1,37 @@
+extends templates/template_ship-Gallente
+
+block variables
+	// Корабль
+	- var nameShip = 'Dominix'
+	- var typeShip = 'Линкор'
+	- var price = 311000000
+	// Описание
+	- var description = "«Доминикс» — заслуженный ветеран космоса, находящийся в строю со времен галлентско-калдарской войны. Этот корабль уже не считается передовым, но его ни в коей мере нельзя назвать устаревшим. Обломав зубы о прочную «шкуру» этого увальня и пострадав от роя выпущенных им дронов, о принятом решении пожалеет любой капитан, ввязавшийся с ним в схватку — разве что кроме пилотов самых крупных и современных линкоров."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 9350
+	- var cargo = 750
+	- var droneCompartment = 375
+	- var telecontrolChannel = 125
+	// Броня
+	- var armorStrength = 8800
+	// Щит
+	- var shieldStrength = 7920
+	- var shieldRegen = 2500
+	// Накопитель энергии
+	- var capacity = 6000
+	- var energyRegen = 1099
+	// Целеуказания
+	- var captureRange = 84
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 109
+	- var warp_mode = 3.0
+	// Служба оснащения
+	- var CPU = 600
+	- var reactor = 10000
+	- var pointsGun = 6
+	- var pointsLauncher = 0
+	- var connectHPower = 6
+	- var connectMPower = 5
+	- var connectLPower = 7

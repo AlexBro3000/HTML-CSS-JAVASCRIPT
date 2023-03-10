@@ -1,0 +1,37 @@
+extends templates/template_ship-Minmatar
+
+block variables
+	// Корабль
+	- var nameShip = 'Talwar'
+	- var typeShip = 'Эсминец'
+	- var price = 1060000
+	// Описание
+	- var description = "Эсминец типа «Талвар» — воплощение прагматичности матарского народа в вопросе тактики ведения боевых действий. Вне зависимости от численности, огневой мощи и обстоятельств, их боевая тактика может быть сведена к одному базовому принципу: избегай ущерба, пока можешь (скрытностью или скоростью), затем нанеси столько вреда, сколько сможешь, и убегай, пока не убили. По этой причине «талвары» не рассчитаны на длительное присутствие на поле боя. Их конструкция рассчитана на быстрое приближение к противнику для нанесения мощных и чрезвычайно частых ударов."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 800
+	- var cargo = 400
+	- var droneCompartment = 0
+	- var telecontrolChannel = 0
+	// Броня
+	- var armorStrength = 800
+	// Щит
+	- var shieldStrength = 850
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 450
+	- var energyRegen = 290
+	// Целеуказания
+	- var captureRange = 36
+	- var amount = 6
+	// Двигательная установка
+	- var speed = 255
+	- var warp_mode = 4.5
+	// Служба оснащения
+	- var CPU = 200
+	- var reactor = 51
+	- var pointsGun = 0
+	- var pointsLauncher = 7
+	- var connectHPower = 7
+	- var connectMPower = 3
+	- var connectLPower = 3

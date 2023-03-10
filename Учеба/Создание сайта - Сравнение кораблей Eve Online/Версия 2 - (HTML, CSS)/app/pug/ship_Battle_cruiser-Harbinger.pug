@@ -1,0 +1,37 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Harbinger'
+	- var typeShip = 'Линейный крейсер'
+	- var price = 52000000
+	// Описание
+	- var description = "Появившись на полях сражений, корабли класса «Харбинджер» сразу зарекомендовали себя в качестве действительно страшного оружия — своего рода лазера, выжигающего сердца язычников. Об их предназначении говорит решительно все — от ярких прожекторов на носу и крыльях, выискивающих безбожников во тьме космоса, до множества несущих им гибель орудий; нечестивцам, случайно уцелевшим после первых залпов, придётся принять смерть от полчищ боевых дронов, запускаемых с борта крейсера."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 4500
+	- var cargo = 375
+	- var droneCompartment = 75
+	- var telecontrolChannel = 50
+	// Броня
+	- var armorStrength = 5250
+	// Щит
+	- var shieldStrength = 3000
+	- var shieldRegen = 1400
+	// Накопитель энергии
+	- var capacity = 3000
+	- var energyRegen = 750
+	// Целеуказания
+	- var captureRange = 65
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 175
+	- var warp_mode = 3.5
+	// Служба оснащения
+	- var CPU = 375
+	- var reactor = 1550
+	- var pointsGun = 6
+	- var pointsLauncher = 0
+	- var connectHPower = 7
+	- var connectMPower = 4
+	- var connectLPower = 6

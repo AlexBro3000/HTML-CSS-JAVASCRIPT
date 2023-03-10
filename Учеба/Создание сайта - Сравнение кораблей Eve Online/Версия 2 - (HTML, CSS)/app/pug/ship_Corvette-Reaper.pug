@@ -1,0 +1,37 @@
+extends templates/template_ship-Minmatar
+
+block variables
+	// Корабль
+	- var nameShip = 'Reaper'
+	- var typeShip = 'Корвет'
+	- var price = 0
+	// Описание
+	- var description = "Корветы типа «Рипер» — самые маленькие фрегаты Республики, по своим характеристикам не сильно отличающиеся от палубных истребителей. Они очень дешевы и массово используются для быстрых рейдерских акций как матарскими правоохранительными органами, так и нарушителями закона.";
+	// Характеристики
+	// Корпус
+	- var hullStrength = 150
+	- var cargo = 120
+	- var droneCompartment = 5
+	- var telecontrolChannel = 5
+	// Броня
+	- var armorStrength = 150
+	// Щит
+	- var shieldStrength = 175
+	- var shieldRegen = 730
+	// Накопитель энергии
+	- var capacity = 125
+	- var energyRegen = 62.5
+	// Целеуказания
+	- var captureRange = 22
+	- var amount = 3
+	// Двигательная установка
+	- var speed = 310
+	- var warp_mode = 3.0
+	// Служба оснащения
+	- var CPU = 130
+	- var reactor = 24
+	- var pointsGun = 2
+	- var pointsLauncher = 2
+	- var connectHPower = 2
+	- var connectMPower = 2
+	- var connectLPower = 2

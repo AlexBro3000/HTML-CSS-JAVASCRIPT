@@ -1,0 +1,21 @@
+block variables
+
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title Корабли - Eve Online
+
+        link(rel="stylesheet", href="css/main.css")
+    body
+        div.block_menu
+            include ../components/block_menu.pug
+        div.block_tree
+            include ../components/block_tree-ship.pug
+
+        div.block_data
+            block data
+            
+//- - C:\Users\alexb\Desktop\Project
+//- - gulp dev

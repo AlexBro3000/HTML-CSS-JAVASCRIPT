@@ -1,0 +1,37 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Abaddon'
+	- var typeShip = 'Линкор'
+	- var price = 310000000
+	// Описание
+	- var description = "Линкоры типа «Абаддон» — это божественные орудия уничтожения. Они призваны первыми вступать в бой, непрерывными залпами атакуя противника с дистанции и не позволяя приблизиться к себе, пока от последнего еретика не останутся лишь обугленные обломки."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 8800
+	- var cargo = 740
+	- var droneCompartment = 75
+	- var telecontrolChannel = 75
+	// Броня
+	- var armorStrength = 9350
+	// Щит
+	- var shieldStrength = 7700
+	- var shieldRegen = 2500
+	// Накопитель энергии
+	- var capacity = 6375
+	- var energyRegen = 1250
+	// Целеуказания
+	- var captureRange = 96
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 89
+	- var warp_mode = 3.0
+	// Служба оснащения
+	- var CPU = 560
+	- var reactor = 21000
+	- var pointsGun = 8
+	- var pointsLauncher = 1
+	- var connectHPower = 8
+	- var connectMPower = 4
+	- var connectLPower = 7

@@ -1,0 +1,37 @@
+extends templates/template_ship-Gallente
+
+block variables
+	// Корабль
+	- var nameShip = 'Incursus'
+	- var typeShip = 'Фрегат'
+	- var price = 238000
+	// Описание
+	- var description = "Корабли типа «Инкёрсус» одинаково уместны в составе как ударных сил, так и флотов поддержки при проведении Галлентской Федерацией военных операций. Отличные ходовые характеристики фрегатов позволяют использовать их для нанесения коротких, беспокоящих ударов по силам противника; благодаря хорошей защищённости «инкёрсусов» вероятность их выживания на поле боя считается достаточно высокой. Наиболее эффективный способ боевого применения «инкёрсусов» — в составе звеньев, охотящихся на более крупные корабли. В последнее время фрегатами этого типа всё охотнее пользуются пираты, которым пришёлся по душе агрессивный внешний вид «инкёрсусов». "
+	// Характеристики
+	// Корпус
+	- var hullStrength = 500
+	- var cargo = 165
+	- var droneCompartment = 5
+	- var telecontrolChannel = 5
+	// Броня
+	- var armorStrength = 450
+	// Щит
+	- var shieldStrength = 400
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 370
+	- var energyRegen = 185
+	// Целеуказания
+	- var captureRange = 30
+	- var amount = 4
+	// Двигательная установка
+	- var speed = 340
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 135
+	- var reactor = 45
+	- var pointsGun = 3
+	- var pointsLauncher = 0
+	- var connectHPower = 3
+	- var connectMPower = 3
+	- var connectLPower = 4

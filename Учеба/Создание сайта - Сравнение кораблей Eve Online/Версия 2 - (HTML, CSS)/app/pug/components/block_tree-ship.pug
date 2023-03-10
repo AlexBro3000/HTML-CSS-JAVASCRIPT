@@ -1,0 +1,159 @@
+//- Дерево кораблей
+mixin ship(name, type)
+        - var href = "../ship_" + type + "-" + name + ".html";
+        p
+                label
+                        input(type="checkbox" class="checkbox_ship")&attributes(attributes)
+                        span
+                if name == nameShip
+                        a(href=href id=name).action
+                                = name
+                else
+                        a(href=href id=name)
+                                = name
+
+fieldset
+        legend
+                h3 Дерево кораблей
+        details(open).Corvette
+                summary
+                        abbr(title="Корветы — примитивные суда, оснащённые базовыми орудиями, буровыми модулями и двигательными установками. Они предоставляются бесплатно на любой станции по запросу «Подняться на борт корвета». Эти корабли снабжают капсулёров основными инструментами исследования Нового Эдема и служат своего рода ступенькой для перехода к другим специализациям.") Корвет
+                details.Amarr
+                        summary.Amarr Amarr
+                        +ship("Impairor", "Corvette")(value="Corvette/Impairor")
+                details.Gallente
+                        summary.Gallente Gallente
+                        +ship("Velator", "Corvette")(value="Corvette/Velator")
+                details.Caldari
+                        summary.Caldari Caldari
+                        +ship("Ibis", "Corvette")(value="Corvette/Ibis")
+                details.Minmatar
+                        summary.Minmatar Minmatar
+                        +ship("Reaper", "Corvette")(value="Corvette/Reaper")
+        details(open).Frigate
+                summary
+                        abbr(title="Фрегаты — доступные, но весьма эффективные боевые суда. Они отлично показывают себя в небольших схватках и обеспечивают существенную поддержку флоту в крупных сражениях, быстро обездвиживая приоритетные цели.") Фрегат
+                details.Amarr
+                        summary.Amarr Amarr
+                        +ship("Magnate", "Frigate")(value="Frigate/Magnate")
+                        +ship("Tormentor", "Frigate")(value="Frigate/Tormentor")
+                        +ship("Punisher", "Frigate")(value="Frigate/Punisher")
+                        +ship("Crucifier", "Frigate")(value="Frigate/Crucifier")
+                        +ship("Executioner", "Frigate")(value="Frigate/Executioner")
+                        +ship("Inquisitor", "Frigate")(value="Frigate/Inquisitor")
+                details.Gallente
+                        summary.Gallente Gallente
+                        +ship("Navitas", "Frigate")(value="Frigate/Navitas")
+                        +ship("Tristan", "Frigate")(value="Frigate/Tristan")
+                        +ship("Incursus", "Frigate")(value="Frigate/Incursus")
+                        +ship("Imicus", "Frigate")(value="Frigate/Imicus")
+                        +ship("Atron", "Frigate")(value="Frigate/Atron")
+                        +ship("Maulus", "Frigate")(value="Frigate/Maulus")
+                details.Caldari
+                        summary.Caldari Caldari
+                        +ship("Bantam", "Frigate")(value="Frigate/Bantam")
+                        +ship("Condor", "Frigate")(value="Frigate/Condor")
+                        +ship("Griffin", "Frigate")(value="Frigate/Griffin")
+                        +ship("Kestrel", "Frigate")(value="Frigate/Kestrel")
+                        +ship("Merlin", "Frigate")(value="Frigate/Merlin")
+                        +ship("Heron", "Frigate")(value="Frigate/Heron")
+                details.Minmatar
+                        summary.Minmatar Minmatar
+                        +ship("Slasher", "Frigate")(value="Frigate/Slasher")
+                        +ship("Probe", "Frigate")(value="Frigate/Probe")
+                        +ship("Rifter", "Frigate")(value="Frigate/Rifter")
+                        +ship("Breacher", "Frigate")(value="Frigate/Breacher")
+                        +ship("Burst", "Frigate")(value="Frigate/Burst")
+                        +ship("Vigil", "Frigate")(value="Frigate/Vigil")
+        details(open).Destroyer
+                summary
+                        abbr(title="Эсминцы идеальны для борьбы с фрегатами: большое количество разъёмов для орудий в сочетании с повышенной скоростью наведения и дальностью действия орудийных систем позволяют легко расстреливать эти юркие, но хрупкие суда. Однако из-за невысокого урона эсминцы не могут противостоять более крупным противникам.") Эсминец
+                details.Amarr
+                        summary.Amarr Amarr
+                        +ship("Coercer", "Destroyer")(value="Destroyer/Coercer")
+                        +ship("Dragoon", "Destroyer")(value="Destroyer/Dragoon")
+                details.Gallente
+                        summary.Gallente Gallente
+                        +ship("Algos", "Destroyer")(value="Destroyer/Algos")
+                        +ship("Catalyst", "Destroyer")(value="Destroyer/Catalyst")
+                details.Caldari
+                        summary.Caldari Caldari
+                        +ship("Corax", "Destroyer")(value="Destroyer/Corax")
+                        +ship("Cormorant", "Destroyer")(value="Destroyer/Cormorant")
+                details.Minmatar
+                        summary.Minmatar Minmatar
+                        +ship("Talwar", "Destroyer")(value="Destroyer/Talwar")
+                        +ship("Thrasher", "Destroyer")(value="Destroyer/Thrasher")
+        details(open).Cruser
+                summary
+                        abbr(title="Крейсеры — суда среднего размера, перенявшие всё самое лучшее у своих предшественников: фрегатов и эсминцев. Эти корабли сочетают в себе огневую мощь, скорость и сопротивляемость и потому прекрасно подходят практически для любых задач.") Крейсер
+                details.Amarr
+                        summary.Amarr Amarr
+                        +ship("Maller", "Cruser")(value="Cruser/Maller")
+                        +ship("Augoror", "Cruser")(value="Cruser/Augoror")
+                        +ship("Omen", "Cruser")(value="Cruser/Omen")
+                        +ship("Arbitrator", "Cruser")(value="Cruser/Arbitrator")
+                details.Gallente
+                        summary.Gallente Gallente
+                        +ship("Thorax", "Cruser")(value="Cruser/Thorax")
+                        +ship("Vexor", "Cruser")(value="Cruser/Vexor")
+                        +ship("Celestis", "Cruser")(value="Cruser/Celestis")
+                        +ship("Exequror", "Cruser")(value="Cruser/Exequror")
+                details.Caldari
+                        summary.Caldari Caldari
+                        +ship("Moa", "Cruser")(value="Cruser/Moa")
+                        +ship("Osprey", "Cruser")(value="Cruser/Osprey")
+                        +ship("Caracal", "Cruser")(value="Cruser/Caracal")
+                        +ship("Blackbird", "Cruser")(value="Cruser/Blackbird")
+                details.Minmatar
+                        summary.Minmatar Minmatar
+                        +ship("Rupture", "Cruser")(value="Cruser/Rupture")
+                        +ship("Scythe", "Cruser")(value="Cruser/Scythe")
+                        +ship("Stabber", "Cruser")(value="Cruser/Stabber")
+                        +ship("Bellicose", "Cruser")(value="Cruser/Bellicose")
+        details(open).Battle_cruiser
+                summary
+                        abbr(title="Линейные крейсеры отличаются от обычных лучшей защитой и большей мощностью: пилот, управляющий таким судном, может долго держать оборону. У линейных крейсеров больше разъёмов для орудий и модулей, поэтому их часто используют в качестве кораблей поддержки в боях между флотами.") Линейный крейсер
+                details.Amarr
+                        summary.Amarr Amarr
+                        +ship("Prophecy", "Battle_cruiser")(value="Battle_cruiser/Prophecy")
+                        +ship("Harbinger", "Battle_cruiser")(value="Battle_cruiser/Harbinger")
+                        +ship("Oracle", "Battle_cruiser")(value="Battle_cruiser/Oracle")
+                details.Gallente
+                        summary.Gallente Gallente
+                        +ship("Brutix", "Battle_cruiser")(value="Battle_cruiser/Brutix")
+                        +ship("Myrmidon", "Battle_cruiser")(value="Battle_cruiser/Myrmidon")
+                        +ship("Talos", "Battle_cruiser")(value="Battle_cruiser/Talos")
+                details.Caldari
+                        summary.Caldari Caldari
+                        +ship("Ferox", "Battle_cruiser")(value="Battle_cruiser/Ferox")
+                        +ship("Drake", "Battle_cruiser")(value="Battle_cruiser/Drake")
+                        +ship("Naga", "Battle_cruiser")(value="Battle_cruiser/Naga")
+                details.Minmatar
+                        summary.Minmatar Minmatar
+                        +ship("Cyclone", "Battle_cruiser")(value="Battle_cruiser/Cyclone")
+                        +ship("Hurricane", "Battle_cruiser")(value="Battle_cruiser/Hurricane")
+                        +ship("Tornado", "Battle_cruiser")(value="Battle_cruiser/Tornado")
+        details(open).Battleship
+                summary
+                        abbr(title="Линкоры — надёжные боевые суда с большим количеством разъёмов для орудий. Они обладают внушительной огневой мощью и стреляют на дальние расстояния. Эти корабли отлично подходят для выполнения заданий и сражений между флотами. Некоторым из них даже не нужны звёздные врата, чтобы перемещать союзников сквозь космическое пространство.") Линкор
+                details.Amarr
+                        summary.Amarr Amarr
+                        +ship("Abaddon", "Battleship")(value="Battleship/Abaddon")
+                        +ship("Apocalypse", "Battleship")(value="Battleship/Apocalypse")
+                        +ship("Armageddon", "Battleship")(value="Battleship/Armageddon")
+                details.Gallente
+                        summary.Gallente Gallente
+                        +ship("Hyperion", "Battleship")(value="Battleship/Hyperion")
+                        +ship("Megathron", "Battleship")(value="Battleship/Megathron")
+                        +ship("Dominix", "Battleship")(value="Battleship/Dominix")
+                details.Caldari
+                        summary.Caldari Caldari
+                        +ship("Rokh", "Battleship")(value="Battleship/Rokh")
+                        +ship("Raven", "Battleship")(value="Battleship/Raven")
+                        +ship("Scorpion", "Battleship")(value="Battleship/Scorpion")
+                details.Minmatar
+                        summary.Minmatar Minmatar
+                        +ship("Maelstrom", "Battleship")(value="Battleship/Maelstrom")
+                        +ship("Tempest", "Battleship")(value="Battleship/Tempest")
+                        +ship("Typhoon", "Battleship")(value="Battleship/Typhoon")

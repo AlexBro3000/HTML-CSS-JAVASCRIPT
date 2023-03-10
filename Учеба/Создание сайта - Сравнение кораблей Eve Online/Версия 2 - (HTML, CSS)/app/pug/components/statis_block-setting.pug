@@ -1,0 +1,225 @@
+fieldset
+    legend
+        h4 Настройки
+    div
+        fieldset
+            legend
+                h4 Основные
+            table(border="0")
+                tr
+                    td.field Тип корабля:
+                    td.data
+                        label
+                            input(type="checkbox" value="Тип корабля" class="checkbox_visible" checked)
+                            span
+                tr
+                    td.field Государство:
+                    td.data
+                        label
+                            input(type="checkbox" value="Государство" class="checkbox_visible" checked)
+                            span
+                tr
+                    td.field Стоимость:
+                    td.data
+                        label
+                            input(type="checkbox" value="Стоимость" class="checkbox_visible" checked)
+                            span
+        fieldset
+            legend
+                h4 Корпус
+            table(border="0")
+                tr 
+                    td.field Запас прочности корпуса:
+                    td.data
+                        label
+                            input(type="checkbox" value="Запас прочности корпуса" class="checkbox_visible" checked)
+                            span
+                tr 
+                td.field Вместимость грузового отсека:
+                    td.data
+                        label
+                            input(type="checkbox" value="Вместимость грузового отсека" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Объем отсека для дронов:
+                    td.data
+                        label
+                            input(type="checkbox" value="Объем отсека для дронов" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Пропускная способность канала телеуправления:
+                    td.data
+                        label
+                            input(type="checkbox" value="Пропускная способность канала телеуправления" class="checkbox_visible" checked)
+                            span
+        fieldset
+            legend
+                h4 Броня
+            table(border="0")
+                tr 
+                    td.field Запас прочности брони:
+                    td.data
+                        label
+                            input(type="checkbox" value="Запас прочности брони" class="checkbox_visible" checked)
+                            span
+        fieldset
+            legend
+                h4 Щит
+            table(border="0")
+                tr 
+                    td.field Запас прочности щита:
+                    td.data
+                        label
+                            input(type="checkbox" value="Запас прочности щита" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Время регенерации щитов:
+                    td.data
+                        label
+                            input(type="checkbox" value="Время регенерации щитов" class="checkbox_visible" checked)
+                            span
+        fieldset
+            legend
+                h4 Накопитель энергии
+            table(border="0")
+                tr 
+                    td.field Емкость накопителя:
+                    td.data
+                        label
+                            input(type="checkbox" value="Емкость накопителя" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Время востановления заряда:
+                    td.data
+                        label
+                            input(type="checkbox" value="Время востановления заряда" class="checkbox_visible" checked)
+                            span
+    div
+        fieldset
+            legend
+                h4 Целеуказания
+            table(border="0")
+                tr 
+                    td.field Максимальная дальность захвата цели:
+                    td.data
+                        label
+                            input(type="checkbox" value="Дальность захвата цели" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Максимальное количество захваченных целей:
+                    td.data
+                        label
+                            input(type="checkbox" value="Количество захваченных целей" class="checkbox_visible" checked)
+                            span
+        fieldset
+            legend
+                h4 Двигательная установка
+            table(border="0")
+                tr 
+                    td.field Максимальная скорость:
+                    td.data
+                        label
+                            input(type="checkbox" value="Максимальная скорость" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Скорость в варп-режиме:
+                    td.data
+                        label
+                            input(type="checkbox" value="Скорость в варп-режиме" class="checkbox_visible" checked)
+                            span
+        fieldset
+            legend
+                h4 Системы
+            table(border="0")
+                tr 
+                    td.field Мощность ЦПУ:
+                    td.data
+                        label
+                            input(type="checkbox" value="Мощность ЦПУ" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Мощность реактора:
+                    td.data
+                        label
+                            input(type="checkbox" value="Мощность реактора" class="checkbox_visible" checked)
+                            span
+        fieldset
+            legend
+                h4 Точки монтажа
+            table(border="0")
+                tr 
+                    td.field Орудийные установки:
+                    td.data
+                        label
+                            input(type="checkbox" value="Орудийные установки" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Пусковые установки:
+                    td.data
+                        label
+                            input(type="checkbox" value="Пусковые установки" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Разъемы большой мощности:
+                    td.data
+                        label
+                            input(type="checkbox" value="Разъемы большой мощности" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Разъемы средней мощности:
+                    td.data
+                        label
+                            input(type="checkbox" value="Разъемы средней мощности" class="checkbox_visible" checked)
+                            span
+                tr 
+                    td.field Разъемы малой мощности:
+                    td.data
+                        label
+                            input(type="checkbox" value="Разъемы малой мощности" class="checkbox_visible" checked)
+                            span
+    div.display
+        div.sort
+            fieldset.sort
+                legend
+                    h4 Сортировка
+                p
+                    select.sort
+                        option(value="0") По умолчанию
+                        option(value="2") Стоимость
+                        option(value="3") Запас прочности корпуса
+                        option(value="4") Вместимость грузового отсека
+                        option(value="5") Объем отсека для дронов
+                        option(value="6") Пропускная способность канала телеуправления
+                        option(value="16") Запас прочности брони
+                        option(value="21") Запас прочности щита
+                        option(value="22") Время регенерации щитов
+                        option(value="30") Емкость накопителя
+                        option(value="31") Время востановления заряда
+                        option(value="32") Дальность захвата цели
+                        option(value="33") Количество захваченных целей
+                        option(value="40") Максимальная скорость
+                        option(value="41") Скорость в варп-режиме
+                        option(value="42") Мощность ЦПУ
+                        option(value="43") Мощность реактора
+                        option(value="45") Орудийные установки
+                        option(value="46") Пусковые установки
+                        option(value="47") Разъемы большой мощности
+                        option(value="48") Разъемы средней мощности
+                        option(value="49") Разъемы малой мощности
+                p
+                    input(type="radio" name="sort_1" value="1" checked="")
+                    span По возрастанию
+                    input(type="radio" name="sort_1" value="2")
+                    span По убыванию
+        div.display
+            fieldset.display
+                legend
+                    h4 Отображение
+                p
+                    input(type="radio" name="display" value="1" checked="")
+                    span По умолчанию
+                p
+                    input(type="radio" name="display" value="2")
+                    span ISK/единицу
+        div.button
+            input(type="button" value="Обновить")#update_table

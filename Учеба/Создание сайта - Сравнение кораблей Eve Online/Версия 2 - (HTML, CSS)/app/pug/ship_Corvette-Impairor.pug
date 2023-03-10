@@ -1,0 +1,37 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Impairor'
+	- var typeShip = 'Корвет'
+	- var price = 0
+	// Описание
+	- var description = "Массовый выпуск корветов типа «Импэйрор» был налажен Амаррской Империей много десятков лет назад. Они являются самыми распространенными кораблями в пределах амаррских границ, и равным образом используются в качестве обычных торговых судов и малотоннажных транспортов для перевозки рабов.";
+	// Характеристики
+	// Корпус
+	- var hullStrength = 200
+	- var cargo = 115
+	- var droneCompartment = 5
+	- var telecontrolChannel = 5
+	// Броня
+	- var armorStrength = 200
+	// Щит
+	- var shieldStrength = 125
+	- var shieldRegen = 519
+	// Накопитель энергии
+	- var capacity = 140
+	- var energyRegen = 70
+	// Целеуказания
+	- var captureRange = 25.5
+	- var amount = 3
+	// Двигательная установка
+	- var speed = 300
+	- var warp_mode = 3.0
+	// Служба оснащения
+	- var CPU = 120
+	- var reactor = 26
+	- var pointsGun = 2
+	- var pointsLauncher = 1
+	- var connectHPower = 2
+	- var connectMPower = 2
+	- var connectLPower = 2

@@ -1,0 +1,43 @@
+extends templates/template_page
+
+block variables
+	- var status = "main"
+
+block data
+	div.main_block_img
+		div
+			img(src="./img/Impairor.jpg")
+		div
+			img(src="./img/Velator.jpg")
+		div
+			img(src="./img/Ibis.jpg")
+		div
+			img(src="./img/Reaper.jpg")
+	div.main_block_ship_imp
+		- var src_img = "img/Impairor.jpg"
+		- var name = "Impairor"
+		- var type = "Корвет"
+		- var state = "Amarr"
+		- var description = "Массовый выпуск корветов типа «Импэйрор» был налажен Амаррской Империей много десятков лет назад. Они являются самыми распространенными кораблями в пределах амаррских границ, и равным образом используются в качестве обычных торговых судов и малотоннажных транспортов для перевозки рабов.";
+		include ./components/main_block-ship.pug
+	div.main_block_ship_vel
+		- var src_img = "img/Velator.jpg"
+		- var name = "Velator"
+		- var type = "Корвет"
+		- var state = "Gallente"
+		- var description = "Корветы типа «Велатор» — одни из самых старых кораблей, состоящих на вооружении флота Галлентской Федерации. При выпуске в свободную продажу «велаторы» предназначались для скоростной перевозки пассажиров, однако со временем на месте кают появились дополнительные точки монтажа орудийных и пусковых установок — «Велатор» был признан в качестве малотоннажного боевого корабля. Несмотря на смену профессии, «Велатор» по-прежнему отлично подходит для перевозки грузов и добычи сырья."
+		include ./components/main_block-ship.pug
+	div.main_block_ship_ibi
+		- var src_img = "img/Ibis.jpg"
+		- var name = "Ibis"
+		- var type = "Корвет"
+		- var state = "Caldari"
+		- var description = "Корветы типа «Ибис», выпускаемые корпорациями Государства Калдари — это малотоннажные, но очень крепкие корабли, отлично справляющиеся с перевозкой грузов и добычей сырья; «Ибисы» надёжны, корабль этого типа — отличный выбор для начинающего пилота."
+		include ./components/main_block-ship.pug
+	div.main_block_ship_rea
+		- var src_img = "img/Reaper.jpg"
+		- var name = "Reaper"
+		- var type = "Корвет"
+		- var state = "Minmatar"
+		- var description = "Корветы типа «Рипер» — самые маленькие фрегаты Республики, по своим характеристикам не сильно отличающиеся от палубных истребителей. Они очень дешевы и массово используются для быстрых рейдерских акций как матарскими правоохранительными органами, так и нарушителями закона."
+		include ./components/main_block-ship.pug
