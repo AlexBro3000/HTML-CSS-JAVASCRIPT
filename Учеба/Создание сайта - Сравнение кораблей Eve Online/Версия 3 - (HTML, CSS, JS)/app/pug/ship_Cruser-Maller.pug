@@ -1,0 +1,41 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Maller'
+	- var typeShip = 'Крейсер'
+	- var price = 12300000
+	// Описание
+	- var description = "«Маллер», возможно, является самым прочным крейсером галактики и часто встречается в составе флотов Амаррской Империи. В основном он применяется в военных целях, но иногда используется и в частном секторе для сопровождения грузов высокой ценности."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 1700
+	- var cargo = 480
+	- var droneCompartment = 15
+	- var telecontrolChannel = 15
+	// Броня
+	- var armorStrength = 2300
+	// Щит
+	- var shieldStrength = 1000
+	- var shieldRegen = 1250
+	// Накопитель энергии
+	- var capacity = 1625
+	- var energyRegen = 465
+	// Целеуказания
+	- var captureRange = 47.5
+	- var amount = 6
+	// Двигательная установка
+	- var speed = 205
+	- var warp_mode = 4.0
+	// Служба оснащения
+	- var CPU = 300
+	- var reactor = 1150
+	- var pointsGun = 5
+	- var pointsLauncher = 0
+	- var connectHPower = 5
+	- var connectMPower = 3
+	- var connectLPower = 6
+
+block script_variables
+	script.
+		const status = "ship";

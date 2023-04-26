@@ -1,0 +1,41 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Armageddon'
+	- var typeShip = 'Линкор'
+	- var price = 312000000
+	// Описание
+	- var description = "«Армагеддон» — это основная боевая единица флота Амаррской Империи. Когда-то он был мощным бронированным тяжеловесом, сокрушающим все на своем пути; теперь он рассчитан на применение более осторожной и взвешенной тактики: вместо него в ближний бой вступает рой дронов, пока сам он с дистанции нейтрализует энергию бортового накопителя вражеского корабля."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 8800
+	- var cargo = 750
+	- var droneCompartment = 375
+	- var telecontrolChannel = 125
+	// Броня
+	- var armorStrength = 9350
+	// Щит
+	- var shieldStrength = 7480
+	- var shieldRegen = 2500
+	// Накопитель энергии
+	- var capacity = 6200
+	- var energyRegen = 1100
+	// Целеуказания
+	- var captureRange = 82.5
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 100
+	- var warp_mode = 3.0
+	// Служба оснащения
+	- var CPU = 550
+	- var reactor = 13500
+	- var pointsGun = 5
+	- var pointsLauncher = 5
+	- var connectHPower = 7
+	- var connectMPower = 4
+	- var connectLPower = 7
+
+block script_variables
+	script.
+		const status = "ship";

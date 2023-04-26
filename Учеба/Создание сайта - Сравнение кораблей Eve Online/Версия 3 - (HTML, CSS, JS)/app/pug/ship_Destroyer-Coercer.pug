@@ -1,0 +1,41 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Coercer'
+	- var typeShip = 'Эсминец'
+	- var price = 1190000
+	// Описание
+	- var description = "Флот Амаррской Империи заказал создание эсминца типа «Коерсер» в ответ на активно применявшиеся матарами отряды, состоявшие лишь из маленьких и подвижных фрегатов. «Коерсеры» предназначены для поиска и уничтожения роёв малых кораблей. "
+	// Характеристики
+	// Корпус
+	- var hullStrength = 800
+	- var cargo = 375
+	- var droneCompartment = 0
+	- var telecontrolChannel = 0
+	// Броня
+	- var armorStrength = 900
+	// Щит
+	- var shieldStrength = 700
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 700
+	- var energyRegen = 370
+	// Целеуказания
+	- var captureRange = 30
+	- var amount = 6
+	// Двигательная установка
+	- var speed = 255
+	- var warp_mode = 4.5
+	// Служба оснащения
+	- var CPU = 168
+	- var reactor = 85
+	- var pointsGun = 7
+	- var pointsLauncher = 0
+	- var connectHPower = 8
+	- var connectMPower = 2
+	- var connectLPower = 3
+
+block script_variables
+	script.
+		const status = "ship";

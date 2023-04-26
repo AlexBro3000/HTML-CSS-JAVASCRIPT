@@ -1,0 +1,41 @@
+extends templates/template_ship-Gallente
+
+block variables
+	// Корабль
+	- var nameShip = 'Hyperion'
+	- var typeShip = 'Линкор'
+	- var price = 323000000
+	// Описание
+	- var description = "Заполняя нишу бластерных кораблей в классе линкоров, флот Федерации привлек лучшие таланты к работе над проектом «Гиперион». В результате был создан один из наиболее смертоносных и универсальных боевых кораблей, когда-либо бороздивших тьму космоса."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 9350
+	- var cargo = 845
+	- var droneCompartment = 175
+	- var telecontrolChannel = 125
+	// Броня
+	- var armorStrength = 8800
+	// Щит
+	- var shieldStrength = 8250
+	- var shieldRegen = 2500
+	// Накопитель энергии
+	- var capacity = 7200
+	- var energyRegen = 1500
+	// Целеуказания
+	- var captureRange = 85.4
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 115
+	- var warp_mode = 3.0
+	// Служба оснащения
+	- var CPU = 600
+	- var reactor = 16000
+	- var pointsGun = 6
+	- var pointsLauncher = 1
+	- var connectHPower = 7
+	- var connectMPower = 5
+	- var connectLPower = 7
+
+block script_variables
+	script.
+		const status = "ship";

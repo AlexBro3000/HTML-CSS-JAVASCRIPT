@@ -1,0 +1,41 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Omen'
+	- var typeShip = 'Крейсер'
+	- var price = 12100000
+	// Описание
+	- var description = "Сильные стороны проекта «Омен» — толстая броня и мощные лазеры, что совершенно типично для амаррских кораблей. Благодаря усовершенствованным системам отвода тепла «Омен» превосходит по скорострельности лазерных орудий любой другой корабль, не оснащённый этой технологией."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 1500
+	- var cargo = 400
+	- var droneCompartment = 40
+	- var telecontrolChannel = 40
+	// Броня
+	- var armorStrength = 1700
+	// Щит
+	- var shieldStrength = 1200
+	- var shieldRegen = 1250
+	// Накопитель энергии
+	- var capacity = 1600
+	- var energyRegen = 565
+	// Целеуказания
+	- var captureRange = 55
+	- var amount = 6
+	// Двигательная установка
+	- var speed = 260
+	- var warp_mode = 4.0
+	// Служба оснащения
+	- var CPU = 330
+	- var reactor = 1000
+	- var pointsGun = 5
+	- var pointsLauncher = 0
+	- var connectHPower = 5
+	- var connectMPower = 3
+	- var connectLPower = 6
+
+block script_variables
+	script.
+		const status = "ship";

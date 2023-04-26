@@ -1,0 +1,41 @@
+extends templates/template_ship-Caldari
+
+block variables
+	// Корабль
+	- var nameShip = 'Blackbird'
+	- var typeShip = 'Крейсер'
+	- var price = 9030000
+	// Описание
+	- var description = "«Блэкбёрд» — небольшой высокотехнологичный крейсер, недавно принятый на вооружение флота Государства Калдари. Обычно используемые в составе флотов или в роли ведомых, они предназначены не столько для участия в лобовых боестолкновениях, сколько для решения более тонких тактических задач. "
+	// Характеристики
+	// Корпус
+	- var hullStrength = 1400
+	- var cargo = 305
+	- var droneCompartment = 10
+	- var telecontrolChannel = 10
+	// Броня
+	- var armorStrength = 1200
+	// Щит
+	- var shieldStrength = 1400
+	- var shieldRegen = 1250
+	// Накопитель энергии
+	- var capacity = 1250
+	- var energyRegen = 445
+	// Целеуказания
+	- var captureRange = 85
+	- var amount = 8
+	// Двигательная установка
+	- var speed = 190
+	- var warp_mode = 4.0
+	// Служба оснащения
+	- var CPU = 425
+	- var reactor = 525
+	- var pointsGun = 3
+	- var pointsLauncher = 3
+	- var connectHPower = 4
+	- var connectMPower = 6
+	- var connectLPower = 3
+
+block script_variables
+	script.
+		const status = "ship";

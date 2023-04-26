@@ -1,0 +1,40 @@
+extends templates/template_ship-Minmatar
+
+block variables
+	// Корабль
+	- var nameShip = 'Hurricane'
+	- var typeShip = 'Линейный крейсер'
+	- var price = 52400000
+	// Описание
+	- var description = "Огневая мощь этого корабля достаточно велика для того, чтобы за ним всегда тянулся хвост из обломков вражеских звездолетов, пополнивших собой вселенскую коллекцию космического мусора. Они легко адаптируются к различным тактическим ситуациям — им хватает и точек монтажа орудийных установок, и возможностей по монтажу пусковых установок ракет. Мощный двигатель поможет пилоту «Харрикейна» догнать врагов, а вместительный накопитель энергии — выйти победителем из затяжного сражения."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 3500
+	- var cargo = 425
+	- var droneCompartment = 40
+	- var telecontrolChannel = 40
+	// Броня
+	- var armorStrength = 4500
+	// Щит
+	- var shieldStrength = 4500
+	- var shieldRegen = 1400
+	// Накопитель энергии
+	- var capacity = 2300
+	- var energyRegen = 9575
+	// Целеуказания
+	- var captureRange = 60
+	// Двигательная установка
+	- var speed = 180
+	- var warp_mode = 3.5
+	// Служба оснащения
+	- var CPU = 400
+	- var reactor = 1140
+	- var pointsGun = 6
+	- var pointsLauncher = 3
+	- var connectHPower = 7
+	- var connectMPower = 4
+	- var connectLPower = 6
+
+block script_variables
+	script.
+		const status = "ship";

@@ -1,0 +1,41 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Punisher'
+	- var typeShip = 'Фрегат'
+	- var price = 536000
+	// Описание
+	- var description = "Многие признают, что «Панишер» — один из лучших амаррских фрегатов. Его основное назначение — поддержка более крупных кораблей флота в ходе крупномасштабных военных операций, на что недвусмысленно намекает мощность несомого им вооружения; впрочем, «панишеры» вполне способны постоять за себя сами, дав сдачи практически любому противнику."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 450
+	- var cargo = 135
+	- var droneCompartment = 0
+	- var telecontrolChannel = 0
+	// Броня
+	- var armorStrength = 500
+	// Щит
+	- var shieldStrength = 350
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 400
+	- var energyRegen = 160
+	// Целеуказания
+	- var captureRange = 25
+	- var amount = 4
+	// Двигательная установка
+	- var speed = 355
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 140
+	- var reactor = 67
+	- var pointsGun = 4
+	- var pointsLauncher = 0
+	- var connectHPower = 4
+	- var connectMPower = 2
+	- var connectLPower = 5
+
+block script_variables
+	script.
+		const status = "ship";

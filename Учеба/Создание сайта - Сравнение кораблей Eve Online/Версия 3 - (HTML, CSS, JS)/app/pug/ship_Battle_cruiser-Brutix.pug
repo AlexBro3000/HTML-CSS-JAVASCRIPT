@@ -1,0 +1,41 @@
+extends templates/template_ship-Gallente
+
+block variables
+	// Корабль
+	- var nameShip = 'Brutix'
+	- var typeShip = 'Линейный крейсер'
+	- var price = 51300000
+	// Описание
+	- var description = "«Брутикс» — один из наиболее мощных военных кораблей, которые когда-либо производились в Галлентской Федерации. Это настоящее чудовище во всех смыслах этого слова. Появление этого монстра на поле боя не останется незамеченным."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 5000
+	- var cargo = 475
+	- var droneCompartment = 75
+	- var telecontrolChannel = 50
+	// Броня
+	- var armorStrength = 4500
+	// Щит
+	- var shieldStrength = 3500
+	- var shieldRegen = 1400
+	// Накопитель энергии
+	- var capacity = 3100
+	- var energyRegen = 774
+	// Целеуказания
+	- var captureRange = 60
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 160
+	- var warp_mode = 3.5
+	// Служба оснащения
+	- var CPU = 435
+	- var reactor = 1.125
+	- var pointsGun = 6
+	- var pointsLauncher = 0
+	- var connectHPower = 7
+	- var connectMPower = 4
+	- var connectLPower = 6
+
+block script_variables
+	script.
+		const status = "ship";

@@ -1,0 +1,41 @@
+extends templates/template_ship-Minmatar
+
+block variables
+	// Корабль
+	- var nameShip = 'Breacher'
+	- var typeShip = 'Фрегат'
+	- var price = 575000
+	// Описание
+	- var description = "Хрупкий корпус «Бричера» мало чем отличается от металлолома, но количество точек монтажа пусковых установок и превосходные системы обнаружения и сопровождения цели делают его одним из ценнейших матарских кораблей, если речь идёт о ведении боя на дальних дистанциях."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 350
+	- var cargo = 175
+	- var droneCompartment = 10
+	- var telecontrolChannel = 10
+	// Броня
+	- var armorStrength = 350
+	// Щит
+	- var shieldStrength = 500
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 300
+	- var energyRegen = 150
+	// Целеуказания
+	- var captureRange = 35
+	- var amount = 4
+	// Двигательная установка
+	- var speed = 365
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 180
+	- var reactor = 37
+	- var pointsGun = 0
+	- var pointsLauncher = 3
+	- var connectHPower = 3
+	- var connectMPower = 4
+	- var connectLPower = 3
+
+block script_variables
+	script.
+		const status = "ship";

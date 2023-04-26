@@ -1,0 +1,41 @@
+extends templates/template_ship-Gallente
+
+block variables
+	// Корабль
+	- var nameShip = 'Myrmidon'
+	- var typeShip = 'Линейный крейсер'
+	- var price = 53500000
+	// Описание
+	- var description = "Чтобы предотвратить бессмысленные жертвы среди пилотов-сорвиголов, жаждущих сразиться с противником, командование флота Федерации поручило конструкторским бюро разработать проект корабля, исподволь поощряющего осторожность в бою. По сравнению с «Брутиксом» новый линейный крейсер получился гораздо более крепким — главный акцент его создатели сделали на обеспечении высокой боевой живучести. Благодаря огромному количеству разъёмов высокой и средней мощности, равно как и вместительным отсекам для дронов, в бою «мирмидоны» неспешно и уверенно пробиваются сквозь вражеский строй, оставляя за собой лишь медленно остывающие остовы."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 4750
+	- var cargo = 400
+	- var droneCompartment = 200
+	- var telecontrolChannel = 100
+	// Броня
+	- var armorStrength = 4500
+	// Щит
+	- var shieldStrength = 3500
+	- var shieldRegen = 1400
+	// Накопитель энергии
+	- var capacity = 2900
+	- var energyRegen = 725
+	// Целеуказания
+	- var captureRange = 55
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 145
+	- var warp_mode = 3.5
+	// Служба оснащения
+	- var CPU = 400
+	- var reactor = 1050
+	- var pointsGun = 5
+	- var pointsLauncher = 0
+	- var connectHPower = 5
+	- var connectMPower = 5
+	- var connectLPower = 6
+
+block script_variables
+	script.
+		const status = "ship";

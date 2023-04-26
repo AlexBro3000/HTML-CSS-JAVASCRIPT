@@ -1,0 +1,41 @@
+extends templates/template_ship-Amarr
+
+block variables
+	// Корабль
+	- var nameShip = 'Magnate'
+	- var typeShip = 'Фрегат'
+	- var price = 554000
+	// Описание
+	- var description = "При разработке дизайна фрегата типа «Магнат» декоративным элементам уделялось большое внимание — или даже рекордное при сравнении с другими кораблями Амаррской Империи. Считается, что в течение более десятка лет он был частным проектом маленькой группы лучших королевских инженеров. За последнее десятилетие дизайн корабля прошел через несколько этапов. Каждые несколько лет выпускается новая модель «Магната». Последние из этих моделей — «Серебряный Магнат» и «Золотой Магнат» — были представлены публике как призы в амаррских Состязаниях, прошедших в 105 году по юлайскому летоисчислению; первоначальный дизайн «Магната» весьма популярен среди амаррских пилотов."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 250
+	- var cargo = 400
+	- var droneCompartment = 40
+	- var telecontrolChannel = 15
+	// Броня
+	- var armorStrength = 350
+	// Щит
+	- var shieldStrength = 250
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 325
+	- var energyRegen = 180
+	// Целеуказания
+	- var captureRange = 34
+	- var amount = 4
+	// Двигательная установка
+	- var speed = 350
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 230
+	- var reactor = 26
+	- var pointsGun = 2
+	- var pointsLauncher = 2
+	- var connectHPower = 3
+	- var connectMPower = 3
+	- var connectLPower = 4
+
+block script_variables
+	script.
+		const status = "ship";

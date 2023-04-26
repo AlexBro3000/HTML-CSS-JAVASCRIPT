@@ -1,0 +1,41 @@
+extends templates/template_ship-Caldari
+
+block variables
+	// Корабль
+	- var nameShip = 'Drake'
+	- var typeShip = 'Линейный крейсер'
+	- var price = 52900000
+	// Описание
+	- var description = "Линейный крейсер типа «Дрейк» ― творение искусных инженеров, которыми так славится калдарская нация. Создатели «дрейков» решили не изменять проверенной веками традиции ведения ракетного боя; необходимость установки достаточно мощного бортового компьютера для работы со средствами радиоэлектронной борьбы также не подвергалась сомнению."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 3750
+	- var cargo = 450
+	- var droneCompartment = 25
+	- var telecontrolChannel = 25
+	// Броня
+	- var armorStrength = 3250
+	// Щит
+	- var shieldStrength = 5500
+	- var shieldRegen = 1400
+	// Накопитель энергии
+	- var capacity = 2500
+	- var energyRegen = 625
+	// Целеуказания
+	- var captureRange = 65
+	- var amount = 8
+	// Двигательная установка
+	- var speed = 150
+	- var warp_mode = 3.5
+	// Служба оснащения
+	- var CPU = 500
+	- var reactor = 830
+	- var pointsGun = 0
+	- var pointsLauncher = 6
+	- var connectHPower = 7
+	- var connectMPower = 6
+	- var connectLPower = 4
+
+block script_variables
+	script.
+		const status = "ship";

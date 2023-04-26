@@ -1,0 +1,41 @@
+extends templates/template_ship-Minmatar
+
+block variables
+	// Корабль
+	- var nameShip = 'Slasher'
+	- var typeShip = 'Фрегат'
+	- var price = 448000
+	// Описание
+	- var description = "«Слэшер» — дешевый и на удивление универсальный корабль. В пространстве Республики Минматар он встречается чуть ли не на каждом шагу, так как производят его в огромных объёмах. «Слэшер» способен передвигаться с очень большой скоростью и может быть оснащен неплохим набором оружейных систем; он пользуется особой популярностью у начинающих пиратов и контрабандистов."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 300
+	- var cargo = 120
+	- var droneCompartment = 0
+	- var telecontrolChannel = 0
+	// Броня
+	- var armorStrength = 300
+	// Щит
+	- var shieldStrength = 350
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 240
+	- var energyRegen = 120
+	// Целеуказания
+	- var captureRange = 22.5
+	- var amount = 4
+	// Двигательная установка
+	- var speed = 430
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 140
+	- var reactor = 36
+	- var pointsGun = 3
+	- var pointsLauncher = 0
+	- var connectHPower = 4
+	- var connectMPower = 4
+	- var connectLPower = 2
+
+block script_variables
+	script.
+		const status = "ship";

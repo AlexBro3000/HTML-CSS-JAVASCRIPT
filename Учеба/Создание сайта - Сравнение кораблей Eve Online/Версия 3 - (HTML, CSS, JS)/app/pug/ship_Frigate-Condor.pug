@@ -1,0 +1,41 @@
+extends templates/template_ship-Caldari
+
+block variables
+	// Корабль
+	- var nameShip = 'Condor'
+	- var typeShip = 'Фрегат'
+	- var price = 500000
+	// Описание
+	- var description = "«Кондор» быстр и маневрен. Из-за ограниченного объема грузового отсека этот фрегат не слишком подходит для торговли или добычи сырья. Он наиболее эффективен в качестве ударного корабля для молниеносных налётов."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 250
+	- var cargo = 130
+	- var droneCompartment = 0
+	- var telecontrolChannel = 0
+	// Броня
+	- var armorStrength = 250
+	// Щит
+	- var shieldStrength = 400
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 300
+	- var energyRegen = 150
+	// Целеуказания
+	- var captureRange = 30
+	- var amount = 4
+	// Двигательная установка
+	- var speed = 400
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 185
+	- var reactor = 35
+	- var pointsGun = 0
+	- var pointsLauncher = 3
+	- var connectHPower = 4
+	- var connectMPower = 4
+	- var connectLPower = 2
+
+block script_variables
+	script.
+		const status = "ship";

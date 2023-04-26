@@ -1,0 +1,41 @@
+extends templates/template_ship-Minmatar
+
+block variables
+	// Корабль
+	- var nameShip = 'Maelstrom'
+	- var typeShip = 'Линкор'
+	- var price = 297000000
+	// Описание
+	- var description = "Ключевая особенность «Мальстрёма» — его многофункциональность. Его защитные системы идеально подходят для одиночных набегов или сражений в малых отрядах, а восемь точек монтажа орудийных установок обеспечивают потрясающую плотность ведения огня. "
+	// Характеристики
+	// Корпус
+	- var hullStrength = 7700
+	- var cargo = 790
+	- var droneCompartment = 100
+	- var telecontrolChannel = 100
+	// Броня
+	- var armorStrength = 8250
+	// Щит
+	- var shieldStrength = 8800
+	- var shieldRegen = 2500
+	// Накопитель энергии
+	- var capacity = 6000
+	- var energyRegen = 1250
+	// Целеуказания
+	- var captureRange = 90
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 94
+	- var warp_mode = 3.0
+	// Служба оснащения
+	- var CPU = 640
+	- var reactor = 21000
+	- var pointsGun = 8
+	- var pointsLauncher = 0
+	- var connectHPower = 8
+	- var connectMPower = 6
+	- var connectLPower = 5
+
+block script_variables
+	script.
+		const status = "ship";

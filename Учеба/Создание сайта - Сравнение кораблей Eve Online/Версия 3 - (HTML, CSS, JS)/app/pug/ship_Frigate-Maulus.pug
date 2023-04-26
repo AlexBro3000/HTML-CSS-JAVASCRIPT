@@ -1,0 +1,41 @@
+extends templates/template_ship-Gallente
+
+block variables
+	// Корабль
+	- var nameShip = 'Maulus'
+	- var typeShip = 'Фрегат'
+	- var price = 411000
+	// Описание
+	- var description = "«Молус» — это корабль, оснащенный по последнему слову техники; его основным назначением является ведение радиоэлектронной борьбы. «Молусы» особенно ценятся при ведении флотовых действий благодаря оптимизации под технологию постановки помех системам обнаружения целей."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 400
+	- var cargo = 275
+	- var droneCompartment = 30
+	- var telecontrolChannel = 20
+	// Броня
+	- var armorStrength = 350
+	// Щит
+	- var shieldStrength = 300
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 275
+	- var energyRegen = 150
+	// Целеуказания
+	- var captureRange = 64.5
+	- var amount = 6
+	// Двигательная установка
+	- var speed = 375
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 230
+	- var reactor = 28
+	- var pointsGun = 2
+	- var pointsLauncher = 0
+	- var connectHPower = 2
+	- var connectMPower = 4
+	- var connectLPower = 3
+
+block script_variables
+	script.
+		const status = "ship";

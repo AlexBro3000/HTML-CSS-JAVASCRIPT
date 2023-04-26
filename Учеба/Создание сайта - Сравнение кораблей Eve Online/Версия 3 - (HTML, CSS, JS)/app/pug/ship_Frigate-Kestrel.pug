@@ -1,0 +1,41 @@
+extends templates/template_ship-Caldari
+
+block variables
+	// Корабль
+	- var nameShip = 'Kestrel'
+	- var typeShip = 'Фрегат'
+	- var price = 634000
+	// Описание
+	- var description = "Фрегат типа «Кестрел» проектировался из расчёта на эффективное использование пусковых установок; он оснащён чуть ли не лучшими в галактике системами обнаружения и сопровождения целей. Примечательно, что многие состоятельные торговые корпорации (и даже флот Государства Калдари) используют его в качестве транспортного корабля. Это один из немногих торговых кораблей, обладающих мощным наступательным вооружением, благодаря чему он идеально подходит для авантюрных торговых маршрутов в опасных районах. Проект «Кестрел» предполагает одновременный монтаж вплоть до четырех пусковых установок. Вследствие этого орудийные установки и буровое оборудование установить на «Кестрел» невозможно."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 400
+	- var cargo = 160
+	- var droneCompartment = 0
+	- var telecontrolChannel = 0
+	// Броня
+	- var armorStrength = 350
+	// Щит
+	- var shieldStrength = 500
+	- var shieldRegen = 625
+	// Накопитель энергии
+	- var capacity = 330
+	- var energyRegen = 165
+	// Целеуказания
+	- var captureRange = 50
+	- var amount = 5
+	// Двигательная установка
+	- var speed = 325
+	- var warp_mode = 5.0
+	// Служба оснащения
+	- var CPU = 180
+	- var reactor = 45
+	- var pointsGun = 0
+	- var pointsLauncher = 4
+	- var connectHPower = 4
+	- var connectMPower = 4
+	- var connectLPower = 2
+
+block script_variables
+	script.
+		const status = "ship";

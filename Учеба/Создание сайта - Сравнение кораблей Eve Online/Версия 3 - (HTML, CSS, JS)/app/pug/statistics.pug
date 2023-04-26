@@ -1,0 +1,25 @@
+extends templates/template_page
+
+block variables
+	- var status = "statis"
+block script_variables
+	script.
+		const status = "statis";
+
+block data
+	div.statis_block_setting
+		include ./components/statis_block-setting.pug
+	div.statis_block_table
+		include ./components/statis_block-table.pug
+	div.statis_block_graph
+		include ./components/statis_block-graph.pug
+
+block script
+	script(src="./js/script.js")
+	script.
+		update_table();
+	//- script(type="module").
+	//- 	const src = "./js/script_ship.js";
+	//- 	const { update_table } = await import(src);
+
+	//- 	update_table();

@@ -1,0 +1,41 @@
+extends templates/template_ship-Caldari
+
+block variables
+	// Корабль
+	- var nameShip = 'Rokh'
+	- var typeShip = 'Линкор'
+	- var price = 312000000
+	// Описание
+	- var description = "Пилотам Государства Калдари в течение долгого времени не хватало корабля, подходящего для установки оружейных систем гибридного действия; после опубликования тактико-технических характеристик линкоров типа «Рок» у них больше нет причин для недовольства. Будучи создан в надежде на участие в столкновениях крупных флотов, этот мощный и прочный дальнобойный линкор, как ожидается, найдёт применение на полях сражений по всей галактике."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 8250
+	- var cargo = 820
+	- var droneCompartment = 50
+	- var telecontrolChannel = 50
+	// Броня
+	- var armorStrength = 7700
+	// Щит
+	- var shieldStrength = 9350
+	- var shieldRegen = 2500
+	// Накопитель энергии
+	- var capacity = 6000
+	- var energyRegen = 1250
+	// Целеуказания
+	- var captureRange = 108
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 89
+	- var warp_mode = 3.0
+	// Служба оснащения
+	- var CPU = 780
+	- var reactor = 15000
+	- var pointsGun = 8
+	- var pointsLauncher = 4
+	- var connectHPower = 8
+	- var connectMPower = 6
+	- var connectLPower = 5
+
+block script_variables
+	script.
+		const status = "ship";

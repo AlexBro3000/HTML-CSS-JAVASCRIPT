@@ -1,0 +1,41 @@
+extends templates/template_ship-Minmatar
+
+block variables
+	// Корабль
+	- var nameShip = 'Tempest'
+	- var typeShip = 'Линкор'
+	- var price = 318000000
+	// Описание
+	- var description = "«Темпест» — основа флота Республики Минматар. Это универсальный тяжеловооружённый корабль, предназначенный для работы на больших дистанциях; пилот «темпеста» в силах эффективно донести поражающее действие необходимых по ситуации боеприпасов. Хорошо укомплектованная эскадра «темпестов» неоднократно становилась решающим козырем, определяющим исход флотового сражения."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 7480
+	- var cargo = 780
+	- var droneCompartment = 75
+	- var telecontrolChannel = 75
+	// Броня
+	- var armorStrength = 7700
+	// Щит
+	- var shieldStrength = 7480
+	- var shieldRegen = 2500
+	// Накопитель энергии
+	- var capacity = 5400
+	- var energyRegen = 1150
+	// Целеуказания
+	- var captureRange = 81
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 127
+	- var warp_mode = 3.0
+	// Служба оснащения
+	- var CPU = 550
+	- var reactor = 16000
+	- var pointsGun = 6
+	- var pointsLauncher = 4
+	- var connectHPower = 8
+	- var connectMPower = 5
+	- var connectLPower = 6
+
+block script_variables
+	script.
+		const status = "ship";

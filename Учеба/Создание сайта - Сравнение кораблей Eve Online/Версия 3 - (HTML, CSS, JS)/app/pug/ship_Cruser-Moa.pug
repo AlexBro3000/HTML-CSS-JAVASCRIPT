@@ -1,0 +1,41 @@
+extends templates/template_ship-Caldari
+
+block variables
+	// Корабль
+	- var nameShip = 'Moa'
+	- var typeShip = 'Крейсер'
+	- var price = 11500000
+	// Описание
+	- var description = "Крейсер типа «Моа» представляет собой мощный корабль общего назначения; тяжёлые орудия «Моа» позволяют его пилоту не теряться перед лицом любых обитателей космоса. В противоположность «Тораксу» крейсер типа «Моа» наиболее эффективен на дальних дистанциях, с которых его рельсотроны уничтожают более близоруких противников."
+	// Характеристики
+	// Корпус
+	- var hullStrength = 1500
+	- var cargo = 450
+	- var droneCompartment = 15
+	- var telecontrolChannel = 15
+	// Броня
+	- var armorStrength = 1000
+	// Щит
+	- var shieldStrength = 2500
+	- var shieldRegen = 1250
+	// Накопитель энергии
+	- var capacity = 1550
+	- var energyRegen = 490
+	// Целеуказания
+	- var captureRange = 55
+	- var amount = 7
+	// Двигательная установка
+	- var speed = 190
+	- var warp_mode = 4.0
+	// Служба оснащения
+	- var CPU = 380
+	- var reactor = 850
+	- var pointsGun = 5
+	- var pointsLauncher = 0
+	- var connectHPower = 5
+	- var connectMPower = 5
+	- var connectLPower = 4
+
+block script_variables
+	script.
+		const status = "ship";
